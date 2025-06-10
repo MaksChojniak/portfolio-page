@@ -1,0 +1,10 @@
+a{
+    text-decoration: none;    
+}
+
+
+.navbar-link{
+    color: var(--font1-color);
+    font-weight: 420;
+}
+

@@ -1,0 +1,9 @@
+li.navbar-title:hover {
+    background: none !important;
+}
+
+
+.navbar-title{
+    color: var(--font0-color);
+    font-weight: 550;
+}

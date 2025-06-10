@@ -1,0 +1,61 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+
+    min-height: 60vh; 
+
+    gap: 0.5rem;
+    
+    align-items: center;    
+}
+
+
+
+a{
+    text-decoration: none;    
+}
+
+
+
+.title{
+    color: var(--font0-color);
+
+    font-size: 1.3rem;
+    font-weight: 650;
+}
+
+
+
+.text{
+    color: var(--font0-color);
+
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+
+
+.button-back{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 0.7rem;
+    padding: 12px;
+
+    color: var(--font0-color);
+    background: var(--button-color);
+
+    border-radius: 5px;
+    border: none; 
+
+    font-size: 1.25rem;
+    font-weight: 550;
+
+    cursor: pointer;
+}
+
+
+
+
