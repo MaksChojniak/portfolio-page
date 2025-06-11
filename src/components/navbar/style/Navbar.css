@@ -3,7 +3,7 @@ nav {
     
     padding-left: 2.5vw;
     padding-right: 1.5vw;
-    padding-top: 1.5vh;
+    padding-top: 2rem;
     padding-bottom: 1.5vh;
 
     width: 20vw;
@@ -32,6 +32,11 @@ li{
 
 li:hover {
     background: var(--button-color);
+}
+
+
+.spacer{
+    margin-top: 1rem;
 }
 
 

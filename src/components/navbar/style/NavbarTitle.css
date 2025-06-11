@@ -4,6 +4,8 @@ li.navbar-title:hover {
 
 
 .navbar-title{
+    margin-top: 1rem;
+
     color: var(--font0-color);
     font-weight: 550;
 }
