@@ -5,8 +5,8 @@
   --blank-color: rgba(0);
   --font0-color: rgb(30, 30, 40);
   --font1-color: rgba(30, 30, 40, 0.75);
-  --font0-selected-color: rgb(235, 158, 52);
-  --font1-selected-color: rgba(235, 158, 52, 0.75);
+  --font0-selected-color: rgb(235, 148, 52);
+  --font1-selected-color: rgba(235, 148, 52, 1);
 }
 
 [data-theme="dark"] {
@@ -16,8 +16,8 @@
   --blank-color: rgba(0);
   --font0-color: rgb(240, 240, 250);
   --font1-color: rgba(240, 240, 250, 0.75);
-  --font0-selected-color: rgb(235, 158, 52);
-  --font1-selected-color: rgba(235, 158, 52, 0.75);
+  --font0-selected-color: rgb(235, 148, 52);
+  --font1-selected-color: rgba(235, 148, 52, 0.75);
 }
 
 
