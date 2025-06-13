@@ -1,6 +1,6 @@
-import './style/ConsoleAbout.css'
+import './style/About.css'
 
-const ConsoleAbout = () => {
+const About = () => {
 
   return (
     <>
@@ -12,4 +12,4 @@ const ConsoleAbout = () => {
   )
 }
 
-export default ConsoleAbout
+export default About

@@ -7,40 +7,39 @@ import { ThemeProvider } from './context/ThemeProvider'
 
 import Layout from './components/Layout'
 
-import Home from './pages/home/Home'
+import HomePage from './pages/home/Home'
 
-import BlockyPatrol from './pages/games/blocky-patrol/BlockyPatrol'
-import IsoRacer from './pages/games/iso-racer/IsoRacer'
+import Games_BlockyPatrolPage from './pages/games/blocky-patrol/BlockyPatrol'
+import Games_IsoRacerPage from './pages/games/iso-racer/IsoRacer'
 
-import ConsoleAbout from './pages/tools/console/about/ConsoleAbout'
-import ConsoleBaseCommands from './pages/tools/console/base-commands/ConsoleBaseCommands'
-import ConsoleOwnCommands from './pages/tools/console/own-commands/ConsoleOwnCommands'
+import Console_AboutPage from './pages/tools/console/about/About'
+import Console_BaseCommandsPage from './pages/tools/console/base-commands/BaseCommands'
+import Console_OwnCommandsPage from './pages/tools/console/own-commands/OwnCommands'
 
-import Donate from './pages/donate/Donate'
-import Contact from './pages/contact/Contact'
+import DonatePage from './pages/donate/Donate'
+import ContactPage from './pages/contact/Contact'
 
-import ErrorPage from './pages/error/ErrorPage'
+import ErrorPage from './pages/error/Error'
 
 const router = createBrowserRouter(
   [{
     path: '/',
     element: <Layout />,
-    // errorElement: <ErrorPage/>,
     children: [
-      { index: true, element: <Home /> },
+      { index: true, element: <HomePage /> },
       { path: "games", children: [
-        { path: "blocky-patrol", element: <BlockyPatrol /> },
-        { path: "iso-racer", element: <IsoRacer /> },
+        { path: "blocky-patrol", element: <Games_BlockyPatrolPage /> },
+        { path: "iso-racer", element: <Games_IsoRacerPage /> },
       ] },
       { path: "tools", children: [
         { path: "console", children: [
-          { path: "about", element: <ConsoleAbout /> },
-          { path: "basic-commands", element: <ConsoleBaseCommands /> },
-          { path: "own-commands", element: <ConsoleOwnCommands /> },
+          { path: "about", element: <Console_AboutPage /> },
+          { path: "basic-commands", element: <Console_BaseCommandsPage /> },
+          { path: "own-commands", element: <Console_OwnCommandsPage /> },
         ] },
       ] },
-      { path: "donate", element: <Donate /> },
-      { path: "contact", element: <Contact /> },
+      { path: "donate", element: <DonatePage /> },
+      { path: "contact", element: <ContactPage /> },
       { path: "*", element: <ErrorPage /> },
     ]
   }],

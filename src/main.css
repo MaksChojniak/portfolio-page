@@ -1,20 +1,21 @@
 [data-theme="light"] {
   --background-color: rgb(235, 235, 238);
-  --border-color: rgb(180, 180, 190);
+  --border-color: rgb(205, 205, 208);
   --button-color: rgba(170, 170, 170, 0.2);
   --blank-color: rgba(0);
   --font0-color: rgb(30, 30, 40);
-  --font1-color: rgba(30, 30, 40, 0.7);
+  --font1-color: rgba(30, 30, 40, 0.65);
+  --font2-color: rgb(235, 158, 52);
 }
 
 [data-theme="dark"] {
   --background-color: rgb(38, 38, 38);
-  --border-color: rgb(88, 88, 88);
+  --border-color: rgb(63, 63, 63);
   --button-color: rgba(100, 100, 100, 0.2);
   --blank-color: rgba(0);
   --font0-color: rgb(240, 240, 250);
-  --font1-color: rgba(240, 240, 250, 0.7);
-  /* --font2-color: ; */
+  --font1-color: rgba(240, 240, 250, 0.65);
+  --font2-color: rgb(235, 158, 52);
 }
 
 

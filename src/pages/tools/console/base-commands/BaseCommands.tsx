@@ -1,6 +1,6 @@
-import './style/ConsoleBaseCommands.css'
+import './style/BaseCommands.css'
 
-const ConsoleBaseCommands = () => {
+const BaseCommands = () => {
 
   return (
     <>
@@ -12,4 +12,4 @@ const ConsoleBaseCommands = () => {
   )
 }
 
-export default ConsoleBaseCommands
+export default BaseCommands
