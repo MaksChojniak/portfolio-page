@@ -5,10 +5,10 @@ a{
 
 .navbar-link{
     color: var(--font1-color);
-    font-weight: 420;
+    font-weight: 500;
 }
 
 .navbar-link.clicked{
-    color: var(--font1-selected-color);
+    color: var(--font0-selected-color);
 }
 

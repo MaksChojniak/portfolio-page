@@ -1,0 +1,23 @@
+.section-name{
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 0.25rem;
+
+    color: var(--font0-selected-color);
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    text-transform: uppercase;  
+}
+
+.section-part {
+    display: flex;
+    vertical-align: middle;
+}
+
+.section-part svg{
+    margin-left: 4px;
+    margin-right: 4px;
+}
