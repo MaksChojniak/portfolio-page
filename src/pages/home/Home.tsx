@@ -1,13 +1,16 @@
+import PageTitle from './../../components/content/title/Title'
+import PageContent from './../../components/content/content/Content'
+
 import './style/Home.css'
 
 const Home = () => {
 
   return (
     <>
-    {/* <div className='content'> */}
-    <div>
-        it is Home
-    </div>
+    <PageTitle text={"Home"} />
+    <PageContent>
+      Content
+    </PageContent>
     </>
   )
 }

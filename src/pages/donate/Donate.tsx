@@ -1,13 +1,16 @@
+import PageTitle from './../../components/content/title/Title'
+import PageContent from './../../components/content/content/Content'
+
 import './style/Donate.css'
 
 const Donate = () => {
 
   return (
     <>
-    {/* <div className='content'> */}
-    <div>
-        it is Donate
-    </div>
+    <PageTitle text={"Donate"} />
+    <PageContent>
+      Content
+    </PageContent>
     </>
   )
 }

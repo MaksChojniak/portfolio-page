@@ -1,13 +1,16 @@
+import PageTitle from './../../../../components/content/title/Title'
+import PageContent from './../../../../components/content/content/Content'
+
 import './style/About.css'
 
 const About = () => {
 
   return (
     <>
-    {/* <div className='content'> */}
-    <div>
-        it is About Console
-    </div>
+    <PageTitle text={"About"} />
+    <PageContent>
+      Content
+    </PageContent>
     </>
   )
 }

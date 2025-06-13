@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import './style/NavbarLink.css'
 
 export interface NavbarLinkProps {
@@ -9,10 +9,13 @@ export interface NavbarLinkProps {
 
 const NavbarLink = ({ text = "link", link = "/", closeNavbar } : NavbarLinkProps) => {
 
+  const location = useLocation();
+  const isClicked = location.pathname === link;
+
   return (
     <>
     <li><Link to={`${link}`} onClick={closeNavbar}>
-        <div className="navbar-link">{`${text}`}</div>
+        <div className={`navbar-link ${isClicked ? "clicked" : ""}`}>{`${text}`}</div>
     </Link></li>
     </>
   )

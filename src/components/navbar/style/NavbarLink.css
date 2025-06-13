@@ -8,3 +8,7 @@ a{
     font-weight: 420;
 }
 
+.navbar-link.clicked{
+    color: var(--font1-selected-color);
+}
+

@@ -6,7 +6,7 @@ const Error = () => {
 //   const error = useRouteError();
   return (
     <> 
-    <div className='content'>
+    {/* <div className='content'>
         <div className='title'>
             Page not found
         </div>
@@ -14,7 +14,7 @@ const Error = () => {
             The page you are looking for doesn't exist.
         </div>
         <Link to="/"><div className='button-back'>Back to Home</div></Link>
-    </div>
+    </div> */}
     </>
   );
 };

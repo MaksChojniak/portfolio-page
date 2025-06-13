@@ -1,13 +1,17 @@
+import PageTitle from './../../components/content/title/Title'
+import PageContent from './../../components/content/content/Content'
+
 import './style/Contact.css'
+
 
 const Contact = () => {
 
   return (
     <>
-    {/* <div className='content'> */}
-    <div>
-        it is Contact
-    </div>
+    <PageTitle text={"Contact"} />
+    <PageContent>
+      Content
+    </PageContent>
     </>
   )
 }
