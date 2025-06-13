@@ -3,8 +3,8 @@
   --border-color: rgb(205, 205, 208);
   --button-color: rgba(170, 170, 170, 0.2);
   --blank-color: rgba(0);
-  --font0-color: rgb(30, 30, 40);
-  --font1-color: rgba(30, 30, 40, 0.55);
+  --font0-color: rgb(45, 45, 55);
+  --font1-color: rgba(45, 45, 55, 0.55);
   --font0-selected-color: rgb(235, 148, 52);
   /* --font1-selected-color: rgba(235, 148, 52, 1); */
 }
