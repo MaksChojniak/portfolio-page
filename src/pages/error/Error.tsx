@@ -1,5 +1,5 @@
 // import { useRouteError, Link } from 'react-router';
-import { Link } from 'react-router';
+// import { Link } from 'react-router';
 import './style/Error.css';
 
 const Error = () => {
