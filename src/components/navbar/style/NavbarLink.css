@@ -5,7 +5,7 @@ a{
 
 .navbar-link{
     color: var(--font1-color);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .navbar-link.clicked{
