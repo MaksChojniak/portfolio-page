@@ -6,18 +6,20 @@
 
     color: var(--font0-selected-color);
 
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 0.875rem;
+    font-weight: 800;
 
     text-transform: uppercase;  
 }
 
 .section-part {
     display: flex;
+    align-items: center;
     vertical-align: middle;
 }
 
 .section-part svg{
+    filter: drop-shadow(0 0 1px currentColor);
     margin-left: 4px;
     margin-right: 4px;
 }
