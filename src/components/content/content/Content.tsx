@@ -5,7 +5,7 @@ interface ContentProps{
     children: React.ReactNode;
 }
 
-const Title = ( { children }: ContentProps) => {
+const Content = ( { children }: ContentProps) => {
 
   return (
     <>
@@ -14,4 +14,4 @@ const Title = ( { children }: ContentProps) => {
   )
 }
 
-export default Title
+export default Content

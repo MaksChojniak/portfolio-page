@@ -20,7 +20,7 @@ const Navbar = ( {isOpen, closeNavbar} : NavbarProps) => {
   return (
     <>
     <nav className={`${isOpen ? 'open' : ''}`}>
-      <div>
+      <div className="navbar-container">
         <ul>
             <NavbarLink closeNavbar={closeNavbar} text="Home" link="/" />
             <NavbarTitle text="Games" />

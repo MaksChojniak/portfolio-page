@@ -1,8 +1,6 @@
 nav {
     margin: 0;
     
-    padding-left: 6.5vw;
-    padding-right: 1.5vw;
     padding-top: 2rem;
     padding-bottom: 1.5vh;
 
@@ -14,6 +12,25 @@ nav {
     background: var(--background-color);
 }
 
+.navbar-container{
+    width: 100%;
+    height: 100%;
+    
+    padding-left: 6.5vw;
+    padding-right: 1.5vw;
+
+    overflow-y: auto;
+}
+
+.navbar-container::-webkit-scrollbar {
+  width: 8px;
+  background: var(--blank-color);
+}
+
+.navbar-container::-webkit-scrollbar-thumb {
+  background: var(--font1-color);
+  border-radius: 4px;
+}
 
 li{
     /* padding-left: 1.5vw; */

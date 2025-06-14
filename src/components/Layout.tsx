@@ -17,7 +17,9 @@ const Layout = () => {
     <div className='container'>
         <Navbar isOpen={isOpen} closeNavbar={closeNavbar}/> 
         <main>
-            <Outlet/>
+            <div className='outlet-container'>
+              <Outlet/>
+            </div>
         </main>
     </div>
     </>

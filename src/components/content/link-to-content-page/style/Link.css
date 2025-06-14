@@ -1,0 +1,17 @@
+.link-container{
+    margin-top: 0.6rem;
+}
+
+.link-to-content-page{
+    color: var(--font0-selected-color);
+    
+    font-weight: 500;   
+    font-size: 500;   
+    
+    text-decoration: none; 
+}
+
+.link-to-content-page:visited {
+  color: var(--font0-selected-color);
+  text-decoration: none;
+}
