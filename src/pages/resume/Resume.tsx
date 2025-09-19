@@ -17,7 +17,7 @@ type Language = "pl" | "en"
 const Resume = () => {
 
   const [language, setLanguage] = useState<Language>("en");
-  const toggleLanguage = () => { language === "pl" ? setLanguage("en") : setLanguage("pl"); };
+//   const toggleLanguage = () => { language === "pl" ? setLanguage("en") : setLanguage("pl"); };
 
   const path = language === "pl" ? resume_path_pl : resume_path_en;
 
