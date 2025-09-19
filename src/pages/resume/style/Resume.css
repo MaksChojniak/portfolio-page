@@ -1,28 +1,29 @@
 .resume-toolbar{
-    position: relative;
+    display: flex;
+    align-items: center;
+
+    /* position: relative; */
 
     width: 50%;
 
     margin-left: auto;
     margin-right: auto;
 
-    display: flex;
-    align-items: center;
-
     border: 1px solid var(--border-color);
 }
 
-
 .resume-link{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    /* position: absolute; */
+    /* left: 50%; */
+    /*transform: translateX(-50%); */
 
     color: var(--font1-color);
 
     text-align: center;
     font-size: 1.4rem;
     font-weight: 600;
+
+    text-decoration: none; 
 }
 
 
