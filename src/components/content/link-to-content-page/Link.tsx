@@ -7,7 +7,7 @@ interface LinkProps{
 
 type PageLinkToContentProps = LinkProps & { children?: React.ReactNode };
 
-const base_link = "https://mirror-networking.gitbook.io/docs/manual/interest-management/team";
+const base_link = "https://www.google.com/";
 const Link = ( { children, link=base_link } : PageLinkToContentProps) => {
 
   return (

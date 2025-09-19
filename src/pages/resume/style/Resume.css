@@ -1,0 +1,61 @@
+.resume-toolbar{
+    position: relative;
+
+    width: 50%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid var(--border-color);
+}
+
+
+.resume-link{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: var(--font1-color);
+
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+.language-buttons-container{
+    margin-left: auto;
+    margin-right: 1vw;
+}
+
+.language-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 2.5rem;
+
+    padding: 8px;
+
+    margin: 0.5rem 0.1rem;
+
+    color: var(--font0-color);
+    background: var(--blank-color);
+
+    border-radius: 5px;
+    border: none; 
+
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+.language-button:hover{
+    background: var(--button-color);
+}
+.language-button.clicked{
+    background: var(--font0-selected-color);
+}

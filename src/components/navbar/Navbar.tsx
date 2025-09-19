@@ -13,6 +13,7 @@ const Navbar = ( {isOpen, closeNavbar} : NavbarProps) => {
 
   const tools_console_section_child = [
     {text:"About", link:"/tools/console/about"}, 
+    {text:"How To Use", link:"/tools/console/how-to-use"},
     {text:"Basic Commands", link:"/tools/console/basic-commands"},
     {text:"Own Commands", link:"/tools/console/own-commands"},
   ]; 
@@ -28,6 +29,8 @@ const Navbar = ( {isOpen, closeNavbar} : NavbarProps) => {
             <NavbarLink closeNavbar={closeNavbar} text="Iso Racer" link="/games/iso-racer" />
             <NavbarTitle text="Tools" />
             <NavbarSection closeNavbar={closeNavbar} text="Console" childs={tools_console_section_child} />
+            <NavbarTitle text="Portfolio" />
+            <NavbarLink closeNavbar={closeNavbar} text="Resume" link="/resume" />
             <div className="spacer"/>
             <NavbarLink closeNavbar={closeNavbar} text="Donate" link="/donate" />
             <NavbarLink closeNavbar={closeNavbar} text="Contact" link="/contact" />

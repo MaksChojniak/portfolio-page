@@ -1,0 +1,25 @@
+.console-about-introduction{
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.console-about-key-feature{
+    background: var(--blank-color);
+
+    list-style: inside; 
+
+    font-size: 1.2rem;
+}
+
+.console-about-key-feature:hover {
+    background: var(--blank-color);
+}
+
+.console-about-key-feature-title{
+    font-weight: 600;
+}
+
+
+.console-about-key-features{
+    margin-bottom: 1.5rem;
+}
