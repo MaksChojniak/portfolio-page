@@ -17,9 +17,29 @@ type Language = "pl" | "en"
 const Resume = () => {
 
   const [language, setLanguage] = useState<Language>("en");
-//   const toggleLanguage = () => { language === "pl" ? setLanguage("en") : setLanguage("pl"); };
-
   const path = language === "pl" ? resume_path_pl : resume_path_en;
+  // const path = '/assets/resume/test-many-pages.pdf';
+
+  const pdf_file_preview = (
+  <>
+  <div className='resume-toolbar'>
+    <a className="resume-link" href={path} download={resume_name}>
+      Download PDF
+    </a>
+    <div className='language-buttons-container'>
+      <button className={`language-button ${language == "en" ? "clicked" : ""}`} onClick={() => setLanguage("en")}>
+        en
+      </button>
+      <button className={`language-button ${language == "pl" ? "clicked" : ""}`} onClick={() => setLanguage("pl")}>
+        pl
+      </button>
+    </div>
+  </div>
+  <div className='resume-pdf'>
+    <PDF path={path} />
+  </div>
+  </>
+  )
 
   return (
     <>
@@ -27,24 +47,7 @@ const Resume = () => {
     <PageTitle text={"Resume"} />
     <PageContent>
       Content
-      <div className='resume-toolbar'>
-        <a className="resume-link" href={path} download={resume_name}>
-          Download PDF
-        </a>
-        <div className='language-buttons-container'>
-          <button className={`language-button ${language == "en" ? "clicked" : ""}`} onClick={() => setLanguage("en")}>
-            en
-          </button>
-          <button className={`language-button ${language == "pl" ? "clicked" : ""}`} onClick={() => setLanguage("pl")}>
-            pl
-          </button>
-        </div>
-      </div>
-      <div className='resume-pdf'>
-        <PDF path={path} />
-      </div>
-    
-      Content
+      {pdf_file_preview}
     </PageContent>
     </>
   )
