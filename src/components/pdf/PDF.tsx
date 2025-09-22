@@ -42,7 +42,7 @@ const PDF = ( {path} : PdfProps ) => {
     {/* <Document className="pdf-preview-container" file={path} scale={1.35} onLoadSuccess={onDocumentLoadSuccess}> */}
     <Document className="pdf-preview-container" file={path} scale={1.35}>
       {/* <Page className="pdf-preview" pageNumber={pageNumber} renderAnnotationLayer={false} renderTextLayer={false}/> */}
-      <Page className="pdf-preview" pageNumber={2} renderAnnotationLayer={false} renderTextLayer={false}/>
+      <Page className="pdf-preview" pageNumber={1} renderAnnotationLayer={false} renderTextLayer={false}/>
     </Document>
     {/* <div className='pdf-toolbar'>
       {pageNumber <= 1 ? <></> : previous_page_button}
