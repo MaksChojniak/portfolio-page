@@ -29,7 +29,7 @@ const Resume = () => {
       Content
       <div className='resume-toolbar'>
         <a className="resume-link" href={path} download={resume_name}>
-          Download Resume PDF
+          Download PDF
         </a>
         <div className='language-buttons-container'>
           <button className={`language-button ${language == "en" ? "clicked" : ""}`} onClick={() => setLanguage("en")}>
@@ -40,7 +40,10 @@ const Resume = () => {
           </button>
         </div>
       </div>
-      <PDF path={path} />
+      <div className='resume-pdf'>
+        <PDF path={path} />
+      </div>
+    
       Content
     </PageContent>
     </>
