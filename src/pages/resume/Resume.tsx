@@ -46,7 +46,36 @@ const Resume = () => {
     <PageSectionName text={["Portfolio"]}/>
     <PageTitle text={"Resume"} />
     <PageContent>
-      Content
+      <div>
+        Name - Maksymilian Chojniak
+      </div>
+      <div>
+        Role - Programmer / Game Developer
+      </div>
+      <div>
+        Description - I am a second-year Computer Science student at the Częstochowa University of Technology, actively developing my skills in game and 
+        software development. I combine analytical abilities with creativity, and my sports background – including the title of Polish Basketball Champion 
+        and numerous individual awards – has taught me teamwork, determination, and consistency in action. I am a fast learner, adapt well to 
+        new environments, and approach challenges with enthusiasm.
+      </div>
+      <div>
+        Experience - Iso Racer, Blocky Patrol
+      </div>
+      <div>
+        Education - Częstochowa University of Technology, Computer Science, 2024 - present
+      </div>
+      <div>
+        Skills - C++, C#, Algorithms, .NET, Python, Unity, Git
+      </div>
+      <div>
+        Interests - Basketball, Cycling, Traveling
+      </div>
+      <div>
+        Certificates - C#, Introduction to Generative AI
+      </div>
+      <div>
+        Languages - Polish (native), English (B2), French (A1)
+      </div>
       {pdf_file_preview}
     </PageContent>
     </>
