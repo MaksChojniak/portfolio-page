@@ -6,7 +6,8 @@
     color: var(--font0-selected-color);
     
     font-weight: 500;   
-    font-size: 500;   
+    /* font-size: 500;    */
+    font-size: 0.875rem;   
     
     text-decoration: none; 
 }
@@ -14,4 +15,11 @@
 .link-to-content-page:visited {
   color: var(--font0-selected-color);
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .link-to-content-page{
+        font-size: 0.675rem;
+    }
+
 }

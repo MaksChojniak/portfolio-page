@@ -9,3 +9,10 @@ li.navbar-title:hover {
     color: var(--font0-color);
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+    .navbar-title{
+        font-size: 0.9rem;
+    }
+
+}

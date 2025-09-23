@@ -49,3 +49,9 @@
 .navbar-dropdown-section.open {
   display: block;
 }
+
+@media (max-width: 768px) {
+  .open-toggle{
+      font-size: 1.1rem;
+  }
+}

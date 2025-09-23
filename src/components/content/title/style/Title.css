@@ -4,3 +4,10 @@
     font-size: 2.25rem;
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+    .content-title{
+        font-size: 2.05rem;
+    }
+
+}

@@ -22,3 +22,10 @@
     margin-left: 4px;
     margin-right: 4px;
 }
+
+@media (max-width: 768px) {
+    .section-name{
+        font-size: 0.675rem;
+    }
+
+}
