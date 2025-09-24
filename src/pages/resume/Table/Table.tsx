@@ -60,21 +60,38 @@ export const TitleCell = ( { children } : CellProps ) => {
 
 interface SectionRowProps{
     title: string;
-    content: string[] | string;
+    content?: string[] | string;
+    contentElements?: React.ReactNode[] | React.ReactNode;
 }
-export const SectionRow = ( { title, content } : SectionRowProps ) => {
+export const SectionRow = ( { title, content, contentElements } : SectionRowProps ) => {
   const contentArray = Array.isArray(content) ? content : [content];
+  const contentElementsArray = Array.isArray(contentElements) ? contentElements : [contentElements];
+
+  let cellContent: React.ReactNode;
+  if (contentElements)
+    cellContent = (<>
+    {contentElementsArray.map((child, index) => (
+      <Row key={index} >
+      <Cell style={{width:'100%'}}>{child}</Cell>
+      </Row>
+    ))}
+    </>)
+  else if (content)
+    cellContent = (<>
+    {contentArray.map((child, index) => (
+      <Row key={index} >
+      <Cell style={{width:'100%'}}>{child}</Cell>
+      </Row>
+    ))}
+    </>)
+
   return (
     <>
     <Row>
       <TitleCell>{title}</TitleCell>
       {/* <Cell>{content}</Cell> */}
       <Cell>
-        {contentArray.map((child, index) => (
-          <Row key={index} >
-            <Cell style={{width:'100%'}}>{child}</Cell>
-          </Row>
-        ))}
+        {cellContent}
       </Cell>
     </Row>
     </>

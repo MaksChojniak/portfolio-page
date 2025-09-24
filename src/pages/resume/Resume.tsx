@@ -56,6 +56,7 @@ const Resume = () => {
           <SectionRow title='Experience' content={['Iso Racer 2020 - 2023', 'Blocky Patrol 2023 - 2025']} />
           <SectionRow title='Education' content={['XCIX Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im.Zbigniewa Herberta, 2020 - 2024', 'Częstochowa University of Technology, Computer Science, 2024 - present']} />
           <SectionRow title='Skills' content='C++, C#, Algorithms, .NET, Python, Unity, Git' />
+          <SectionRow title='Skills' contentElements={[(<><div>C++, C#, Algorithms</div></>), (<><div>.NET, Python, Unity, Git</div></>)]} />
           <SectionRow title='Interests' content='Basketball, Cycling, Traveling' />
           <SectionRow title='Certificates' content={['C#', 'Introduction to Generative AI']} />
           <SectionRow title='Languages' content='Polish (native), English (B2), French (A1)' />
