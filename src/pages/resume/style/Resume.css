@@ -1,3 +1,7 @@
+.resume-table{
+    margin-bottom: 2rem;
+}
+
 .resume-toolbar{
     display: flex;
     align-items: center;
@@ -6,6 +10,7 @@
 
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0.5rem;
 
     padding-left: 1vw;
     padding-right: 1vw;
@@ -79,6 +84,9 @@
 
     margin-left: auto;
     margin-right: auto;
+
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {

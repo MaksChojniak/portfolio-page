@@ -1,0 +1,52 @@
+.table-container{
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: pink; */
+
+    padding: 8px;
+
+    gap: 2rem;
+}
+
+
+.row-container{
+    display: flex;
+    flex-direction: row;
+
+    /* background-color: black; */
+}
+
+.cell-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+
+    /* background-color: turquoise; */
+
+    /* font-size: 1.25rem; */
+    /* font-weight: 550;
+
+    color: var(--font0-selected-color); */
+    gap: 0.5rem;
+}
+.cell-container.title-cell{
+    width: 20%;
+
+    /* background-color: blue; */
+
+    font-weight: 550;
+
+    color: var(--font0-selected-color);
+
+}
+
+@media (max-width: 768px) {
+    .cell-container{
+        width: 65%;
+    }
+    .cell-container.title-cell{
+        width: 35%;
+    }
+}

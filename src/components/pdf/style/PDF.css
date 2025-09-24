@@ -15,8 +15,8 @@ canvas {
 .pdf-preview-container {
     background-color: var(--blank-color) !important;
 
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
 }
 
 .pdf-preview {
