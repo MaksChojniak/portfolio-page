@@ -97,3 +97,38 @@ export const SectionRow = ( { title, content, contentElements } : SectionRowProp
     </>
   )
 }
+
+interface Skill{
+  name: string,
+  level: number,
+  max_level?: number,
+}
+interface SkillsProps {
+  skills: Skill[];
+  max_level: number;
+}
+export const Skill = ( {name, level, max_level} : Skill ) => {
+  max_level = max_level || 5;
+  let stars = "";
+  for (let i = 0; i < max_level; i++) {
+    stars += i < level ? "★" : "☆";
+  }
+  return (
+  <>
+  <span className='skill'>{name} {stars}, </span>
+  </>
+  )
+}
+
+export const Skills = ( {skills, max_level} : SkillsProps ) => {
+  const skills_elements = skills.map((s, i) => (
+    <Skill key={i} name={s.name} level={s.level} max_level={max_level}/>
+  ))
+  return (
+  <>
+  <div className='skills-list'>
+    {skills_elements}
+  </div>
+  </>
+  )
+}
