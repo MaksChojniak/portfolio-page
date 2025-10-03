@@ -115,7 +115,7 @@ export const Skill = ( {name, level, max_level} : Skill ) => {
   }
   return (
   <>
-  <span className='skill'>{name} {stars}, </span>
+  <span className='skill'>{name} {stars}</span>
   </>
   )
 }
