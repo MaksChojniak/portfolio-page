@@ -89,6 +89,22 @@
     margin-bottom: 1rem;
 }
 
+.certification, .experience{
+    color: var(--font0-color);
+
+    /* text-decoration: none; */
+    text-decoration: underline;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+
 @media (max-width: 768px) {
     .resume-toolbar{
         width: 95%;

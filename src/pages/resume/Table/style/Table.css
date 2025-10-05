@@ -33,14 +33,14 @@
 .skills-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    
+
     row-gap: 0.4rem;
     column-gap: 20px;
 }
 
 
 .skill{
-
+     
 }
 
 
