@@ -96,7 +96,7 @@
     text-decoration: underline;
 }
 
-.experience-container {
+.experience-container, .certification-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
