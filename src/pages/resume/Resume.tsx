@@ -49,6 +49,7 @@ const Resume = () => {
 
   const certifcations = [
     <div className='certification-container'><a className='certification' href="https://www.hackerrank.com/certificates/ebd54a7fa872" >C# (Basic)</a>2020</div>,
+    <div className='certification-container'><a className='certification' href="https://www.hackerrank.com/certificates/598408e3cf49" >Problem Solving (Basic)</a>2025</div>,
     <div className='certification-container'><a className='certification' href="" >Introduction to Generative AI</a>2025</div>
   ];
   
