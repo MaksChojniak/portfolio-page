@@ -10,13 +10,22 @@ interface NavbarProps {
     
 const Navbar = ( {isOpen, closeNavbar} : NavbarProps) => {
 
-
-  const tools_console_section_child = [
-    {text:"About", link:"/tools/console/about"}, 
-    {text:"How To Use", link:"/tools/console/how-to-use"},
-    {text:"Basic Commands", link:"/tools/console/basic-commands"},
-    {text:"Own Commands", link:"/tools/console/own-commands"},
+  const projects_unity_inventorysystem_childs = [
+    {text:"About", link:"/projects/unity/inventory-system/about"}, 
+    {text:"How To Use", link:"/projects/unity/inventory-system/how-to-use"},
   ]; 
+
+  const projects_dotnet_inventorysystem_childs = [
+    {text:"About", link:"/projects/dotnet-c#/console-application/about"}, 
+    {text:"How To Use", link:"/projects/dotnet-c#/console-application/how-to-use"},
+  ]; 
+
+  const projects_cpp_inventorysystem_childs = [
+    {text:"About", link:"/projects/c++/console-application/about"}, 
+    {text:"How To Use", link:"/projects/c++/console-application/how-to-use"},
+  ]; 
+
+
 
   return (
     <>
@@ -27,8 +36,16 @@ const Navbar = ( {isOpen, closeNavbar} : NavbarProps) => {
             <NavbarTitle text="Games" />
             <NavbarLink closeNavbar={closeNavbar} text="Blocky Patrol" link="/games/blocky-patrol" />
             <NavbarLink closeNavbar={closeNavbar} text="Iso Racer" link="/games/iso-racer" />
-            <NavbarTitle text="Tools" />
-            <NavbarSection closeNavbar={closeNavbar} text="Console" childs={tools_console_section_child} />
+            <NavbarTitle text="Projects" />
+            <NavbarSection text="Unity" >
+              <NavbarSection closeNavbar={closeNavbar} text="Inventory System" childs={projects_unity_inventorysystem_childs} />
+            </NavbarSection>
+            <NavbarSection text=".NET C#" >
+              <NavbarSection closeNavbar={closeNavbar} text="Console App" childs={projects_dotnet_inventorysystem_childs} />
+            </NavbarSection>
+            <NavbarSection text="C++" >
+              <NavbarSection closeNavbar={closeNavbar} text="Console App" childs={projects_cpp_inventorysystem_childs} />
+            </NavbarSection>
             <NavbarTitle text="Portfolio" />
             <NavbarLink closeNavbar={closeNavbar} text="Resume" link="/resume" />
             <div className="spacer"/>

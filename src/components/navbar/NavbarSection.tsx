@@ -11,14 +11,17 @@ interface NavbarSectionChildProps {
 interface NavbarSectionProps {
   text?: string;
   childs?: NavbarSectionChildProps[];
-  closeNavbar: () => void;
+  closeNavbar?: () => void;
+  children?: React.ReactNode;
 }
 
-const NavbarSection = ({ text = "section", childs = [{text:"subsection", link:"/"}, {text:"subsection2", link:"/"}], closeNavbar } : NavbarSectionProps) => {
+const NavbarSection = ({ text = "section", childs = [], closeNavbar, children } : NavbarSectionProps) => {
 
   const [isOpen, setOpenSection] = useState(false);
 
   const toggleSection = () => setOpenSection(!isOpen);
+
+  const content = childs && closeNavbar ? childs.map((child, index) => (<NavbarLink key={index} closeNavbar={closeNavbar} link={child.link} text={child.text} />)) : children;
 
   return (
     <>
@@ -30,9 +33,7 @@ const NavbarSection = ({ text = "section", childs = [{text:"subsection", link:"/
         </div>
     </li>
     <ul className={`navbar-dropdown-section${isOpen ? ' open' : ''}`}>
-        {childs.map((child, index) => (
-            <NavbarLink key={index} closeNavbar={closeNavbar} link={child.link} text={child.text} />
-        ))}
+        {content}
     </ul>
     </>
   )

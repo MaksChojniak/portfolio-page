@@ -13,10 +13,10 @@ import HomePage from './pages/home/Home'
 import Games_BlockyPatrolPage from './pages/games/blocky-patrol/BlockyPatrol'
 import Games_IsoRacerPage from './pages/games/iso-racer/IsoRacer'
 
-import Console_AboutPage from './pages/tools/console/about/About'
-import Console_HowToUsePage from './pages/tools/console/how-to-use/HowToUse'
-import Console_BaseCommandsPage from './pages/tools/console/base-commands/BaseCommands'
-import Console_OwnCommandsPage from './pages/tools/console/own-commands/OwnCommands'
+// import Console_AboutPage from './pages/tools/console/about/About'
+// import Console_HowToUsePage from './pages/tools/console/how-to-use/HowToUse'
+// import Console_BaseCommandsPage from './pages/tools/console/base-commands/BaseCommands'
+// import Console_OwnCommandsPage from './pages/tools/console/own-commands/OwnCommands'
 
 import ResumePage from './pages/resume/Resume'
 
@@ -35,12 +35,32 @@ const router = createBrowserRouter(
         { path: "blocky-patrol", element: <Games_BlockyPatrolPage /> },
         { path: "iso-racer", element: <Games_IsoRacerPage /> },
       ] },
-      { path: "tools", children: [
-        { path: "console", children: [
-          { path: "about", element: <Console_AboutPage /> },
-          { path: "how-to-use", element: <Console_HowToUsePage /> },
-          { path: "basic-commands", element: <Console_BaseCommandsPage /> },
-          { path: "own-commands", element: <Console_OwnCommandsPage /> },
+      // { path: "tools", children: [
+      //   { path: "console", children: [
+      //     { path: "about", element: <Console_AboutPage /> },
+      //     { path: "how-to-use", element: <Console_HowToUsePage /> },
+      //     { path: "basic-commands", element: <Console_BaseCommandsPage /> },
+      //     { path: "own-commands", element: <Console_OwnCommandsPage /> },
+      //   ] },
+      // ] },
+      { path: "projects", children: [
+        { path: "unity", children: [
+          { path: "inventory-system", children: [
+            { path: "about", element: <div/> },
+            { path: "how-to-use", element: <div/> },
+          ]},
+        ] },
+        { path: "dotnet-c#", children: [
+          { path: "console-application", children: [
+            { path: "about", element: <div/> },
+            { path: "how-to-use", element: <div/> },
+          ]},
+        ] },
+        { path: "c++", children: [
+          { path: "console-application", children: [
+            { path: "about", element: <div/> },
+            { path: "how-to-use", element: <div/> },
+          ]},
         ] },
       ] },
       { path: "resume", element: <ResumePage /> },
