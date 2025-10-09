@@ -40,7 +40,17 @@
 
 
 .skill{
-     
+     display: flex;
+
+     gap: 1rem;
+}
+
+.skill-stars{
+    display: flex;
+    align-items: center;
+
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 
@@ -51,5 +61,8 @@
     }
     .cell-container.title-cell{
         width: 35%;
+    }
+    .skill-stars{
+        font-size: 0.9rem;
     }
 }

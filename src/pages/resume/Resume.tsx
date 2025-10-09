@@ -42,15 +42,25 @@ const Resume = () => {
   </>
   )
 
+
+  const education = [
+    <div className='education-container'><span>XCIX Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im.Zbigniewa Herberta</span>2020 - 2024</div>,
+    <div className='education-container'><span>Częstochowa University of Technology (Computer Science)</span>2024 - present</div>,
+  ]
+
   const experience = [
     <div className='experience-container'><a className='experience' href="https://store.steampowered.com/app/2234020/Iso_Racer/" >Iso Racer</a>2020 - 2023</div>, 
     <div className='experience-container'><a className='experience' href="https://play.google.com/store/apps/details?id=com.MMK.BlockyPatrol" >Blocky Patrol</a>2023 - 2025</div>
   ];
 
+  const skills = <Skills skills={[ {name: "C#", level: 4}, {name: "Unity", level: 3}, {name: "Algorithms", level: 3},
+     {name: "C++", level: 3}, {name: "Python", level: 3}, {name: ".NET", level: 3}, {name: "Git", level: 3} ]} max_level={5} />;
+
   const certifcations = [
     <div className='certification-container'><a className='certification' href="https://www.hackerrank.com/certificates/ebd54a7fa872" >C# (Basic)</a>2020</div>,
     <div className='certification-container'><a className='certification' href="https://www.hackerrank.com/certificates/598408e3cf49" >Problem Solving (Basic)</a>2025</div>,
-    <div className='certification-container'><a className='certification' href="" >Introduction to Generative AI</a>2025</div>
+    <div className='certification-container'><a className='certification' href="https://www.hackerrank.com/certificates/598408e3cf49" >Problem Solving (Advanced)</a>2025</div>,
+    // <div className='certification-container'><a className='certification' href="" >Introduction to Generative AI</a>2025</div>
   ];
   
 
@@ -65,8 +75,8 @@ const Resume = () => {
           <SectionRow title='Role' content='Programmer / Game Developer' />
           <SectionRow title='Description' content='I am a second-year Computer Science student at the Częstochowa University of Technology, actively developing my skills in game and software development. I combine analytical abilities with creativity, and my sports background – including the title of Polish Basketball Champion and numerous individual awards – has taught me teamwork, determination, and consistency in action. I am a fast learner, adapt well to new environments, and approach challenges with enthusiasm.' />
           <SectionRow title='Experience' contentElements={experience} />
-          <SectionRow title='Education' content={['XCIX Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im.Zbigniewa Herberta, 2020 - 2024', 'Częstochowa University of Technology, Computer Science, 2024 - present']} />
-          <SectionRow title='Skills' contentElements={<Skills skills={[ {name: "C#", level: 4}, {name: "Unity", level: 3}, {name: "Algorithms", level: 3}, {name: "C++", level: 3}, {name: "Python", level: 3}, {name: ".NET", level: 3}, {name: "Git", level: 3} ]} max_level={5} />} />
+          <SectionRow title='Education' contentElements={education} />
+          <SectionRow title='Skills' contentElements={skills} />
           <SectionRow title='Interests' content='Basketball, Cycling, Traveling' />
           <SectionRow title='Certificates' contentElements={certifcations} />
           <SectionRow title='Languages' content='Polish (native), English (B2), French (A1)' />

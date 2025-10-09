@@ -96,11 +96,15 @@
     text-decoration: underline;
 }
 
-.experience-container, .certification-container {
+.experience-container, .certification-container, .education-container {
     display: flex;
+
     justify-content: space-between;
     align-items: center;
+
     width: 100%;
+
+    gap: 1rem;
 }
 
 

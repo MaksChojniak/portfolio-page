@@ -1,3 +1,5 @@
+import { IoEllipse, IoEllipseOutline  } from "react-icons/io5";
+
 import './style/Table.css'
 
 interface TableProps{
@@ -109,13 +111,13 @@ interface SkillsProps {
 }
 export const Skill = ( {name, level, max_level} : Skill ) => {
   max_level = max_level || 5;
-  let stars = "";
+  let stars = Array(max_level);
   for (let i = 0; i < max_level; i++) {
-    stars += i < level ? "★" : "☆";
+    stars[i] = i < level ? <IoEllipse/> : <IoEllipseOutline/>;
   }
   return (
   <>
-  <span className='skill'>{name}  {stars}</span>
+  <span className='skill'>{name}  <div className="skill-stars">{stars}</div></span>
   </>
   )
 }
