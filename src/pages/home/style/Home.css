@@ -1,43 +1,36 @@
 .home-h1{
-    /* font-size: 1.4rem;
-    font-weight: 600; */
+    font-size: 1.4rem;
+    font-weight: 550;
 
     color: var(--font0-selected-color);
 }
 
 .home-h2{
-    /* font-size: 1.3rem;
-    font-weight: 550; */
+    font-size: 1.3rem;
+    font-weight: 550;
 }
 
 .home-h3{
-    /* font-size: 1.2rem;
-    font-weight: 500; */
+    font-size: 1.2rem;
+    font-weight: 550;
 }
 
-
 .home-list-element-link{
-    /* font-size: 1.2rem; */
-    /* font-weight: 550; */
-
     color: var(--font0-selected-color);
 
     text-decoration: underline;
 }
 
 .home-list-element{
-    padding-left: 1rem;
-    padding-right: 0.5vw;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
+    /* padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.3vh;
+    padding-bottom: 0.3vh; */
+    padding: 0.25rem 1rem;
 
     border-radius: 5px; 
 
     /* font-size: 1.2rem; */
-}
-
-.home-list-title-element{
-
 }
 
 dt.home-list-title-element, 
@@ -71,24 +64,15 @@ dd.home-list-element::marker {
 
 @media (max-width: 768px) {
     .home-h1{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .home-h2{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .home-h3{
-        font-size: 1.2rem;
-    }
-
-
-    .home-list-element-link{
-        font-size: 1.2rem;
-    }
-
-    .home-list-element{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
 }

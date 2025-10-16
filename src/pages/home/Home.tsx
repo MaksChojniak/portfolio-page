@@ -16,15 +16,15 @@ export const H2 = ({ value }: { value: string } ) => {
   )
 }
 
-// export const H3 = ({ value }: { value: string } ) => {
-//   return (
-//     <div className='home-h3' >{value}</div>
-//   )
-// }
+export const H3 = ({ value }: { value: string } ) => {
+  return (
+    <div className='home-h3' >{value}</div>
+  )
+}
 
 export const ContentLink = ({ link, value, className }: { link: string, value: string, className? : string } ) => {
   return (
-    <a className={"home-list-element-link "+className} href={link}>{value}</a>
+    <a className={"home-list-element-link home-h3 "+className} href={link}>{value}</a>
   )
 }
 
@@ -73,15 +73,15 @@ const Home = () => {
       <Section>
         <dl>
           <H2 value={"Other Projects:"}/>
-          <dt className='home-list-title-element'>Unity:</dt>
+          <dt className='home-list-title-element home-h3'>Unity:</dt>
           <ListItem>
             <ContentLink link={""} value={"Inventory System"}/>
           </ListItem>
-          <dt className='home-list-title-element'>.NET C#:</dt>
+          <dt className='home-list-title-element home-h3'>.NET C#:</dt>
           <ListItem>
             <ContentLink link={""} value={"Console Application"}/>
           </ListItem>
-          <dt className='home-list-title-element'>C++:</dt>
+          <dt className='home-list-title-element home-h3'>C++:</dt>
           <ListItem>
             <ContentLink link={""} value={"Console Application"}/>
           </ListItem>
