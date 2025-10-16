@@ -90,10 +90,16 @@
 }
 
 .certification, .experience{
+    padding: 0.25rem 1rem;
+    border-radius: 5px;
+
     color: var(--font0-color);
 
-    /* text-decoration: none; */
     text-decoration: underline;
+}
+.certification:hover,
+ .experience:hover{
+    background-color: var(--button-color);
 }
 
 .experience-container, .certification-container, .education-container {
