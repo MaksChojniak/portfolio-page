@@ -1,3 +1,7 @@
+.contact-link-content{
+    display: flex;
+}
+
 .contact-links-container{
     padding: 2rem 0px;
 }

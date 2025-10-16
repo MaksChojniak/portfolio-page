@@ -15,9 +15,11 @@ interface DirectLinkProps {
 export const DirectLink = ( { icon, link, children } : DirectLinkProps ) => {
   return (
     <>
-    <a className='contact-link' href={link}>
-      <div className='contact-link-icon' >{icon}</div>{children}
-    </a>
+    <div className='contact-link-content'>
+      <a className='contact-link' href={link}>
+        <div className='contact-link-icon' >{icon}</div>{children}
+      </a>
+    </div>
     </>
   );
 } 
