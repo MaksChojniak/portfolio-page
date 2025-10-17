@@ -45,8 +45,8 @@ export const Section = ({ children }: { children: React.ReactNode} ) => {
 const Home = () => {
 
   const featured_games = [
-    <div className='home-table-link-container' ><ContentLink className='home-list-element' value={"Blocky Patrol"} link="" /></div>,
-    <div className='home-table-link-container' ><ContentLink className='home-list-element' value={"ISO Racer"} link="" /></div>,
+    <div className='home-table-link-container' ><ContentLink className='home-list-element' value={"ISO Racer"} link="games/iso-racer" /></div>,
+    <div className='home-table-link-container' ><ContentLink className='home-list-element' value={"Blocky Patrol"} link="/games/blocky-patrol" /></div>,
   ]
 
   const unity_projects = [
