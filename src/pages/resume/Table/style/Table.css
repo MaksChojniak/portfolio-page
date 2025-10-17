@@ -28,6 +28,13 @@
 
     color: var(--font0-selected-color);
 }
+.cell-container.subtitle-cell{
+    width: 20%;
+
+    font-weight: 550;
+
+    color: var(--font0-color);
+}
 
 
 .skills-list{

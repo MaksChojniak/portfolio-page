@@ -1,6 +1,7 @@
 import { IoEllipse, IoEllipseOutline  } from "react-icons/io5";
 
 import './style/Table.css'
+import React from "react";
 
 interface TableProps{
     children: React.ReactNode;
@@ -34,8 +35,9 @@ export const Row = ( { children } : RowProps ) => {
 
 
 interface CellProps{
-    children: React.ReactNode;
+    children?: React.ReactNode;
     style?: React.CSSProperties;
+    value? : string;
 }
 
 export const Cell = ( { children, style } : CellProps ) => {
@@ -60,12 +62,30 @@ export const TitleCell = ( { children } : CellProps ) => {
   )
 }
 
+export const SubTitleCell = ( {children, value} : CellProps ) => {
+
+  let cellContent : React.ReactNode;
+  if(children)
+      cellContent = (<>{children}</>)
+  else if(value)
+    cellContent = (<>{value}</>)
+
+  return (
+    <>
+    <div className='cell-container subtitle-cell'>
+      {cellContent}
+    </div>
+    </>
+  )
+}
+
 interface SectionRowProps{
-    title: string;
+    title?: string;
+    titleElement?: React.ReactNode;
     content?: string[] | string;
     contentElements?: React.ReactNode[] | React.ReactNode;
 }
-export const SectionRow = ( { title, content, contentElements } : SectionRowProps ) => {
+export const SectionRow = ( { title, titleElement, content, contentElements } : SectionRowProps ) => {
   const contentArray = Array.isArray(content) ? content : [content];
   const contentElementsArray = Array.isArray(contentElements) ? contentElements : [contentElements];
 
@@ -87,10 +107,16 @@ export const SectionRow = ( { title, content, contentElements } : SectionRowProp
     ))}
     </>)
 
+  let cellTitle: React.ReactNode;
+  if(title)
+    cellTitle = (<><TitleCell>{title}</TitleCell></>);
+  else if(titleElement)
+    cellTitle = titleElement;
+
   return (
     <>
     <Row>
-      <TitleCell>{title}</TitleCell>
+      {cellTitle}
       {/* <Cell>{content}</Cell> */}
       <Cell>
         {cellContent}
