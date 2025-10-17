@@ -49,8 +49,8 @@ const Resume = () => {
   ]
 
   const experience = [
-    <div className='experience-container'><a className='experience' href="https://store.steampowered.com/app/2234020/Iso_Racer/" >Iso Racer</a>2020 - 2023</div>, 
-    <div className='experience-container'><a className='experience' href="https://play.google.com/store/apps/details?id=com.MMK.BlockyPatrol" >Blocky Patrol</a>2023 - 2025</div>
+    <div className='experience-container'><a className='experience' href="/games/iso-racer" >Iso Racer</a>2020 - 2023</div>, 
+    <div className='experience-container'><a className='experience' href="/games/blocky-patrol" >Blocky Patrol</a>2023 - 2025</div>
   ];
 
   const skills = <Skills skills={[ {name: "C#", level: 4}, {name: "Unity", level: 3}, {name: "Algorithms", level: 3},

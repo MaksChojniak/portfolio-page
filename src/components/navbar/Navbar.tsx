@@ -34,8 +34,8 @@ const Navbar = ( {isOpen, closeNavbar} : NavbarProps) => {
         <ul>
             <NavbarLink closeNavbar={closeNavbar} text="Home" link="/" />
             <NavbarTitle text="Games" />
-            <NavbarLink closeNavbar={closeNavbar} text="Blocky Patrol" link="/games/blocky-patrol" />
             <NavbarLink closeNavbar={closeNavbar} text="Iso Racer" link="/games/iso-racer" />
+            <NavbarLink closeNavbar={closeNavbar} text="Blocky Patrol" link="/games/blocky-patrol" />
             <NavbarTitle text="Projects" />
             <NavbarSection text="Unity" >
               <NavbarSection closeNavbar={closeNavbar} text="Inventory System" childs={projects_unity_inventorysystem_childs} />
