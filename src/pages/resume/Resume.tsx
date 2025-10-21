@@ -57,10 +57,10 @@ const Resume = () => {
      {name: "C++", level: 3}, {name: "Python", level: 3}, {name: ".NET", level: 3}, {name: "Git", level: 3} ]} max_level={5} />;
 
   const certifcations = [
-    <div className='certification-container'><a className='certification' href="/assets/certificates/gigathon-2etap-certificate.pdf" >Gigathon 2 Etap</a>2023</div>,
+    <div className='certification-container'><a className='certification' href="/assets/certificates/gigathon-2etap-certificate.pdf" >Gigathon Stage 2</a>2023</div>,
     <div className='certification-container'><a className='certification' href="https://www.hackerrank.com/certificates/ebd54a7fa872" >C# (Basic)</a>2023</div>,
     <div className='certification-container'><a className='certification' href="https://www.hackerrank.com/certificates/598408e3cf49" >Problem Solving (Basic)</a>2025</div>,
-    <div className='certification-container'><a className='certification' href="https://www.hackerrank.com/certificates/598408e3cf49" >Problem Solving (Advanced)</a>2025</div>,
+    <div className='certification-container'><a className='certification' href="https://www.hackerrank.com/certificates/28f6f760921a" >Problem Solving (Intermediate)</a>2025</div>,
     <div className='certification-container'><a className='certification' href="/assets/certificates/cppbuzz-cpp-certificate.pdf" >C++ (Basic)</a>2025</div>,
     // <div className='certification-container'><a className='certification' href="" >Introduction to Generative AI</a>2025</div>
   ];
