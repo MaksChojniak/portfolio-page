@@ -16,8 +16,8 @@ const Navbar = ( {isOpen, closeNavbar} : NavbarProps) => {
   ]; 
 
   const projects_dotnet_inventorysystem_childs = [
-    {text:"About", link:"/projects/dotnet-c#/console-application/about"}, 
-    {text:"How To Use", link:"/projects/dotnet-c#/console-application/how-to-use"},
+    {text:"About", link:"/projects/dotnet-c#/travel-agency/about"}, 
+    {text:"How To Use", link:"/projects/dotnet-c#/travel-agency/how-to-use"},
   ]; 
 
   const projects_cpp_inventorysystem_childs = [
@@ -41,7 +41,7 @@ const Navbar = ( {isOpen, closeNavbar} : NavbarProps) => {
               <NavbarSection closeNavbar={closeNavbar} text="Inventory System" childs={projects_unity_inventorysystem_childs} />
             </NavbarSection>
             <NavbarSection text=".NET C#" >
-              <NavbarSection closeNavbar={closeNavbar} text="Console App" childs={projects_dotnet_inventorysystem_childs} />
+              <NavbarSection closeNavbar={closeNavbar} text="Travel Agency App" childs={projects_dotnet_inventorysystem_childs} />
             </NavbarSection>
             <NavbarSection text="C++" >
               <NavbarSection closeNavbar={closeNavbar} text="Console App" childs={projects_cpp_inventorysystem_childs} />

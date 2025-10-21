@@ -51,7 +51,7 @@ const router = createBrowserRouter(
           ]},
         ] },
         { path: "dotnet-c#", children: [
-          { path: "console-application", children: [
+          { path: "travel-agency", children: [
             { path: "about", element: <div/> },
             { path: "how-to-use", element: <div/> },
           ]},
