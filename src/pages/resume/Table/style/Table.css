@@ -19,7 +19,7 @@
 
     width: 80%;
 
-    gap: 0.5rem;
+    /* gap: 0.1rem; */
 }
 .cell-container.title-cell{
     width: 20%;

@@ -126,6 +126,47 @@ export const SectionRow = ( { title, titleElement, content, contentElements } : 
   )
 }
 
+export const SectionTitleRow = ( { title, titleElement, content, contentElements } : SectionRowProps ) => {
+  const contentArray = Array.isArray(content) ? content : [content];
+  const contentElementsArray = Array.isArray(contentElements) ? contentElements : [contentElements];
+
+  let cellContent: React.ReactNode;
+  if (contentElements)
+    cellContent = (<>
+    {contentElementsArray.map((child, index) => (
+      <Row key={index} >
+      <Cell style={{width:'100%'}}>{child}</Cell>
+      </Row>
+    ))}
+    </>)
+  else if (content)
+    cellContent = (<>
+    {contentArray.map((child, index) => (
+      <Row key={index} >
+      <Cell style={{width:'100%'}}>{child}</Cell>
+      </Row>
+    ))}
+    </>)
+
+  let cellTitle: React.ReactNode;
+  if(title)
+    cellTitle = (<><TitleCell>{title}</TitleCell></>);
+  else if(titleElement)
+    cellTitle = titleElement;
+
+  return (
+    <>
+    <Row>
+      {cellTitle}
+      {/* <Cell>{content}</Cell> */}
+      <Cell style={{gap:'1.5rem'}}>
+        {cellContent}
+      </Cell>
+    </Row>
+    </>
+  )
+}
+
 interface Skill{
   name: string,
   level: number,

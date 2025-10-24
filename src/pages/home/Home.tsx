@@ -1,7 +1,7 @@
 // import PageTitle from './../../components/content/title/Title'
 import PageContent from './../../components/content/content/Content'
 
-import { Table, SectionRow, SubTitleCell } from './../resume/Table/Table'
+import { Table, SectionRow, SectionTitleRow, SubTitleCell } from './../resume/Table/Table'
 
 import './style/Home.css'
 
@@ -61,10 +61,22 @@ const Home = () => {
     <div className='home-table-link-container' ><ContentLink className='home-list-element' value={"Console Application"} link="" /></div>,
   ]
 
+  const python_projects = [
+    <div className='home-table-link-container' ><ContentLink className='home-list-element' value={"Matrix Operations"} link="/projects/python/numerical-algorithms/matrix-operations" /></div>,
+    <div className='home-table-link-container' ><ContentLink className='home-list-element' value={"Exact Methods"} link="/projects/python/numerical-algorithms/exact-methods" /></div>,
+    <div className='home-table-link-container' ><ContentLink className='home-list-element' value={"Interpolation Methods"} link="/projects/python/numerical-algorithms/interpolation-methods" /></div>,
+    <div className='home-table-link-container' ><ContentLink className='home-list-element' value={"Approximation Methods"} link="/projects/python/numerical-algorithms/approximation-methods" /></div>,
+    <div className='home-table-link-container' ><ContentLink className='home-list-element' value={"Iterative Methods"} link="/projects/python/numerical-algorithms/iterative-methods" /></div>,
+    <div className='home-table-link-container' ><ContentLink className='home-list-element' value={"Approximate Solution"} link="/projects/python/numerical-algorithms/approximate-solution" /></div>,
+    <div className='home-table-link-container' ><ContentLink className='home-list-element' value={"Integration Methods"} link="/projects/python/numerical-algorithms/integration-methods" /></div>,
+    <div className='home-table-link-container' ><ContentLink className='home-list-element' value={"Discrete Methods For Solving Diff"} link="/projects/python/numerical-algorithms/discrete-methods-for-solving-diff" /></div>,
+  ]
+
   const other_projects = [
     <SectionRow titleElement={<SubTitleCell value={"Unity"}/>} contentElements={[unity_projects]} />,
     <SectionRow titleElement={<SubTitleCell value={".NET C#"}/>} contentElements={[dotnet_projects]} />,
     <SectionRow titleElement={<SubTitleCell value={"C++"}/>} contentElements={[cpp_projects]} />,
+    <SectionRow titleElement={<SubTitleCell value={"Python"}/>} contentElements={[python_projects]} />,
   ]
 
   return (
@@ -90,12 +102,12 @@ const Home = () => {
 
       <Section>
         <Table>
-          <SectionRow title='Other Projects' contentElements={other_projects} />
+          <SectionTitleRow title='Other Projects' contentElements={other_projects} />
         </Table>
       </Section>
       
       <Section>
-        <div>Interested in games, code, or collaboration? <ContentLink className={"home-list-element"} link={""} value={"[Get in touch]"}/></div>
+        <div>Interested in games, code, or collaboration? <ContentLink className={"home-list-element"} link={"/contact"} value={"[Get in touch]"}/></div>
       </Section>
     
     </PageContent>

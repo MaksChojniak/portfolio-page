@@ -25,6 +25,17 @@ const Navbar = ( {isOpen, closeNavbar} : NavbarProps) => {
     {text:"How To Use", link:"/projects/c++/console-application/how-to-use"},
   ]; 
 
+  const projects_python__numerical_algorithms_childs = [
+    {text:"Matrix Operations", link:"/projects/python/numerical-algorithms/matrix-operations"}, 
+    {text:"Exact Methods", link:"/projects/python/numerical-algorithms/exact-methods"}, 
+    {text:"Interpolation Methods", link:"/projects/python/numerical-algorithms/interpolation-methods"}, 
+    {text:"Approximation Methods", link:"/projects/python/numerical-algorithms/approximation-methods"}, 
+    {text:"Iterative Methods", link:"/projects/python/numerical-algorithms/iterative-methods"}, 
+    {text:"Approximate Solution", link:"/projects/python/numerical-algorithms/approximate-solution"}, 
+    {text:"Integration Methods", link:"/projects/python/numerical-algorithms/integration-methods"}, 
+    {text:"Discrete Methods For Solving Diff", link:"/projects/python/numerical-algorithms/discrete-methods-for-solving-diff"}, 
+  ]; 
+
 
 
   return (
@@ -45,6 +56,9 @@ const Navbar = ( {isOpen, closeNavbar} : NavbarProps) => {
             </NavbarSection>
             <NavbarSection text="C++" >
               <NavbarSection closeNavbar={closeNavbar} text="Console App" childs={projects_cpp_inventorysystem_childs} />
+            </NavbarSection>
+            <NavbarSection text="Python" >
+              <NavbarSection closeNavbar={closeNavbar} text="Numerical Algorithms" childs={projects_python__numerical_algorithms_childs} />
             </NavbarSection>
             <NavbarTitle text="Portfolio" />
             <NavbarLink closeNavbar={closeNavbar} text="Resume" link="/resume" />

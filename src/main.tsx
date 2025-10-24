@@ -62,6 +62,18 @@ const router = createBrowserRouter(
             { path: "how-to-use", element: <div/> },
           ]},
         ] },
+        { path: "python", children: [
+          { path: "numerical-algorithms", children: [
+            { path: "matrix-operations", element: <div/> },
+            { path: "exact-methods", element: <div/> },
+            { path: "interpolation-methods", element: <div/> },
+            { path: "approximation-methods", element: <div/> },
+            { path: "iterative-methods", element: <div/> },
+            { path: "approximate-solution", element: <div/> },
+            { path: "integration-methods", element: <div/> },
+            { path: "discrete-methods-for-solving-diff", element: <div/> },
+          ]},
+        ] },
       ] },
       { path: "resume", element: <ResumePage /> },
       { path: "donate", element: <DonatePage /> },
