@@ -25,6 +25,15 @@ import ContactPage from './pages/contact/Contact'
 
 import ErrorPage from './pages/error/Error'
 
+import MatrixOperations from './pages/projects/python/numerical-algorithms/MatrixOperations'
+import IterativeMethods from './pages/projects/python/numerical-algorithms/IterativeMethods'
+import InterpolationMethods from './pages/projects/python/numerical-algorithms/InterpolationMethods'
+import IntegrationMethods from './pages/projects/python/numerical-algorithms/IntegrationMethods'
+import ExactMethods from './pages/projects/python/numerical-algorithms/ExactMethods'
+import DiscreteMethodsForSolvingDiff from './pages/projects/python/numerical-algorithms/DiscreteMethodsForSolvingDiff'
+import ApproximationMethods from './pages/projects/python/numerical-algorithms/ApproximationMethods'
+import ApproximateSolution from './pages/projects/python/numerical-algorithms/ApproximateSolution'
+
 const router = createBrowserRouter(
   [{
     path: '/',
@@ -64,14 +73,14 @@ const router = createBrowserRouter(
         ] },
         { path: "python", children: [
           { path: "numerical-algorithms", children: [
-            { path: "matrix-operations", element: <div/> },
-            { path: "exact-methods", element: <div/> },
-            { path: "interpolation-methods", element: <div/> },
-            { path: "approximation-methods", element: <div/> },
-            { path: "iterative-methods", element: <div/> },
-            { path: "approximate-solution", element: <div/> },
-            { path: "integration-methods", element: <div/> },
-            { path: "discrete-methods-for-solving-diff", element: <div/> },
+            { path: "matrix-operations", element: <MatrixOperations/> },
+            { path: "exact-methods", element: <ExactMethods/> },
+            { path: "interpolation-methods", element: <InterpolationMethods/> },
+            { path: "approximation-methods", element: <ApproximationMethods/> },
+            { path: "iterative-methods", element: <IterativeMethods/> },
+            { path: "approximate-solution", element: <ApproximateSolution/> },
+            { path: "integration-methods", element: <IntegrationMethods/> },
+            { path: "discrete-methods-for-solving-diff", element: <DiscreteMethodsForSolvingDiff/> },
           ]},
         ] },
       ] },
