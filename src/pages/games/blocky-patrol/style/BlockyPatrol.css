@@ -1,5 +1,10 @@
-.blocky-patrol-short-description, .blocky-patrol-description-container{
+/* .blocky-patrol-short-description, .blocky-patrol-description-container{
     display: grid;
 
     gap: 1.5rem;
+} */
+
+.blocky-patrol-image-container{
+    /* display: flex; */
+    /* justify-content: center; */
 }

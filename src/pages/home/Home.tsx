@@ -90,8 +90,11 @@ const Home = () => {
 
       <Section>
         <div>I love combining creativity with programming — from early prototypes to fully playable projects with custom mechanics and visuals.</div>
-
         <div>On this site, you’ll find my favorite works, technical challenges I’ve tackled, and ways to support future development.</div>
+      </Section>
+
+      <Section>
+        <div>Want to know more about my background? Check out my resume/CV for details on my experience and education.<ContentLink className={"home-list-element"} link={"/resume"} value={"Resume"}/></div>
       </Section>
 
       <Section>
@@ -105,9 +108,9 @@ const Home = () => {
           <SectionTitleRow title='Other Projects' contentElements={other_projects} />
         </Table>
       </Section>
-      
+
       <Section>
-        <div>Interested in games, code, or collaboration? <ContentLink className={"home-list-element"} link={"/contact"} value={"[Get in touch]"}/></div>
+        <div>Interested in games, code, or collaboration? <ContentLink className={"home-list-element"} link={"/contact"} value={"Contact"}/></div>
       </Section>
     
     </PageContent>
