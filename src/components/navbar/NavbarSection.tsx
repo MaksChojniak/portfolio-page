@@ -17,7 +17,7 @@ interface NavbarSectionProps {
 
 const NavbarSection = ({ text = "section", childs = [], closeNavbar, children } : NavbarSectionProps) => {
 
-  const [isOpen, setOpenSection] = useState<boolean>();
+  const [isOpen, setOpenSection] = useState(false);
 
   const toggleSection = () => setOpenSection(!isOpen);
 
