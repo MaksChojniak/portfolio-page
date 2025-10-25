@@ -27,10 +27,30 @@
 }
 
 .blocky-patrol-link{
+    padding: 0.25rem 1rem;
+    border-radius: 5px; 
+
+    background-color: var(--blank-color);
+
     color: var(--font0-color);
 
-    text-decoration: none;
+    text-decoration: underline;
 }
+.blocky-patrol-link:hover{
+    background-color: var(--button-color);
+}
+
+.blocky-patrol-list-element{
+    display: list-item;
+    
+    list-style-type: disc;    
+    list-style-position: inside; 
+}
+.blocky-patrol-list-element::marker{
+    color: var( --font0-color);
+
+    font-size: 1.3em;
+} 
 
 
 @media (max-width: 768px){

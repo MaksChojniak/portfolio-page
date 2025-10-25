@@ -14,7 +14,7 @@ const BlockyPatrol = () => {
   
   const image1_path = "/assets/blocky-partol/blocky1.png"
   const image2_path = "/assets/blocky-partol/blocky2.png"
-  // const image3_path = "/assets/blocky-partol/blocky3.png"
+  const image3_path = "/assets/blocky-partol/blocky3.png"
 
   return (
     <>
@@ -47,15 +47,15 @@ const BlockyPatrol = () => {
           <div className='blocky-patrol-section-title'>Screenshots</div>
           <div className='blocky-patrol-image-container' ><Image src={image1_path} /></div>
           <div className='blocky-patrol-image-container' ><Image src={image2_path} /></div>
-          {/* <div className='blocky-patrol-image-container' ><Image src={image3_path} /></div> */}
+          <div className='blocky-patrol-image-container' ><Image src={image3_path} /></div>
         </div>
 
         <div className='blocky-patrol-section'>
           <div className='blocky-patrol-section-title'>Technical Details</div>
-          <div>- Version: (33) 1.3.3</div>  
-          <div>- Size: ~176 MB  </div>
-          <div>- Platform: Android 7.0+</div>  
-          <div>- Mode: Online </div>
+          <div className='blocky-patrol-list-element' >Version: (33) 1.3.3</div>  
+          <div className='blocky-patrol-list-element' >Size: ~176 MB  </div>
+          <div className='blocky-patrol-list-element' >Platform: Android 7.0+</div>  
+          <div className='blocky-patrol-list-element' >Mode: Online </div>
         </div>
         
         <div className='blocky-patrol-section'>
