@@ -1,3 +1,4 @@
+import './style/Style.css'
 
 interface ImageProps{
     src:  string,
@@ -11,7 +12,7 @@ const Image = ( { src, width, height,
 
   return (
     <>
-    <img src={src} alt={alternative_text} width={width} height={height}></img>
+    <img className='image' src={src} alt={alternative_text} width={width} height={height}></img>
     </>
   )
 }

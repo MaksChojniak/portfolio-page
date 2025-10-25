@@ -1,3 +1,4 @@
+import './style/Style.css'
 
 interface VideoProps{
     src:  string,
@@ -14,7 +15,7 @@ const Video = ( { src,
 
   return (
     <>
-    <video
+    <video className='image'
         src={src} controls={controls} autoPlay={autoPlay} loop={loop} muted={muted} >
         {alternative_text}
     </video>

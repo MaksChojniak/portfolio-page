@@ -14,7 +14,7 @@ const BlockyPatrol = () => {
   
   const image1_path = "/assets/blocky-partol/blocky1.png"
   const image2_path = "/assets/blocky-partol/blocky2.png"
-  const image3_path = "/assets/blocky-partol/blocky3.png"
+  // const image3_path = "/assets/blocky-partol/blocky3.png"
 
   return (
     <>
@@ -22,30 +22,48 @@ const BlockyPatrol = () => {
     <PageTitle text={"Blocky Patrol"} />
     <PageLinkToContent link={"https://play.google.com/store/apps/details?id=com.MMK.BlockyPatrol"}>https://play.google.com/store/BlockyPatrol</PageLinkToContent>
     <PageContent>
+      <div className='blocky-patrol-container'>
 
-      <div>
-        <b>Blocky Patrol</b> is a colorful <b>Tower Defense</b> game available on <b>Google Play</b>.<br/> 
-        Defend your base against waves of zombies using strategic tower placements — all in a fun low-poly world!
+        <div>
+          <b>Blocky Patrol</b> is a colorful <b>Tower Defense</b> game available on <b>Google Play</b>.<br/> 
+          Defend your base against waves of zombies using strategic tower placements — all in a fun low-poly world!
+        </div>
+
+        <div className='blocky-patrol-section'>
+          <div className='blocky-patrol-section-title'>Trailer</div>
+          <div className='blocky-patrol-image-container' ><Video src={video1_path} controls={false} /></div>
+        </div>
+
+
+        <div className='blocky-patrol-section'>
+          <div className='blocky-patrol-section-title'>Overview</div>
+          Your mission: survive endless waves of enemies, upgrade your towers, and refine your 
+          defensive strategy.  With its minimalistic voxel style and smooth gameplay, **Blocky Patrol** 
+          offers a refreshing take on the tower defense genre — perfect for both casual and tactical players.
+        </div>
+
+
+        <div className='blocky-patrol-section'>
+          <div className='blocky-patrol-section-title'>Screenshots</div>
+          <div className='blocky-patrol-image-container' ><Image src={image1_path} /></div>
+          <div className='blocky-patrol-image-container' ><Image src={image2_path} /></div>
+          {/* <div className='blocky-patrol-image-container' ><Image src={image3_path} /></div> */}
+        </div>
+
+        <div className='blocky-patrol-section'>
+          <div className='blocky-patrol-section-title'>Technical Details</div>
+          <div>- Version: (33) 1.3.3</div>  
+          <div>- Size: ~176 MB  </div>
+          <div>- Platform: Android 7.0+</div>  
+          <div>- Mode: Online </div>
+        </div>
+        
+        <div className='blocky-patrol-section'>
+          <div className='blocky-patrol-section-title'>Download & Play</div>
+          <div><a className='blocky-patrol-link' href="https://play.google.com/store/apps/details?id=com.MMK.BlockyPatrol" >https://play.google.com/store/com.MMK.BlockyPatrol</a></div>  
+        </div>
+
       </div>
-
-      <div>Trailer</div>
-      <div className='blocky-patrol-image-container' ><Video src={video1_path} controls={false} /></div>
-
-      <div>Overview</div>
-      Your mission: survive endless waves of enemies, upgrade your towers, and refine your 
-      defensive strategy.  With its minimalistic voxel style and smooth gameplay, **Blocky Patrol** 
-      offers a refreshing take on the tower defense genre — perfect for both casual and tactical players.
-    
-      <div>Screenshots</div>
-      <div className='blocky-patrol-image-container' ><Image src={image1_path} height={200} /></div>
-      <div className='blocky-patrol-image-container' ><Image src={image2_path} height={200} /></div>
-      <div className='blocky-patrol-image-container' ><Image src={image3_path} height={200} /></div>
-
-      <div>Technical Details</div>
-      - Version: (33) 1.3.3  
-      - Size: ~176 MB  
-      - Platform: Android 7.0+  
-      - Mode: Online 
 
     </PageContent>
     </>

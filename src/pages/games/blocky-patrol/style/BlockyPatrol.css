@@ -1,10 +1,44 @@
-/* .blocky-patrol-short-description, .blocky-patrol-description-container{
-    display: grid;
+.blocky-patrol-container{
+    display: flex;
+    flex-direction: column;
 
-    gap: 1.5rem;
-} */
+    gap: 2.5rem;
+}
+
+.blocky-patrol-section{
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+}
+
+.blocky-patrol-section-title{
+    font-size: 1.4rem;
+    font-weight: 550;
+
+    color: var(--font0-selected-color);
+}
 
 .blocky-patrol-image-container{
-    /* display: flex; */
-    /* justify-content: center; */
+    margin: 0 auto;
+
+    width: 45%;
+    max-width: 1000px;
+}
+
+.blocky-patrol-link{
+    color: var(--font0-color);
+
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px){
+    .blocky-patrol-image-container{
+        width: 85%;
+    }
+
+    .blocky-patrol-section-title{
+        font-size: 1.2rem;
+    }
 }
