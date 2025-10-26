@@ -37,9 +37,12 @@ const BlockyPatrol = () => {
 
         <div className='blocky-patrol-section'>
           <div className='blocky-patrol-section-title'>Overview</div>
-          Your mission: survive endless waves of enemies, upgrade your towers, and refine your 
-          defensive strategy.  With its minimalistic voxel style and smooth gameplay, **Blocky Patrol** 
-          offers a refreshing take on the tower defense genre — perfect for both casual and tactical players.
+          <div>
+            Your mission: survive endless waves of enemies, upgrade your towers, and refine your 
+            defensive strategy.  With its minimalistic voxel style and smooth 
+            gameplay, <b>Blocky Patrol</b> offers a refreshing take on the tower defense 
+            genre — perfect for both casual and tactical players.
+          </div>
         </div>
 
 

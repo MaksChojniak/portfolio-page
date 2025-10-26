@@ -39,10 +39,12 @@ const IsoRacer = () => {
 
         <div className='iso-racer-section'>
           <div className='iso-racer-section-title'>Overview</div>
-          Feel the thrill of precision driving and perfect drifts!  
-          In **ISO Racer**, every corner counts — test your reflexes, master your technique, 
-          and climb the global leaderboards.  Try out the brand-new **BUSTED Mode**, 
-          where you switch sides and become the cop chasing other players.
+          <div>
+            Feel the thrill of precision driving and perfect drifts!  
+            In <b>ISO Racer</b>, every corner counts — test your reflexes, master your technique, 
+            and climb the global leaderboards.  Try out the brand-new <b>BUSTED Mode</b>, 
+            where you switch sides and become the cop chasing other players.
+          </div>
         </div>
 
 
