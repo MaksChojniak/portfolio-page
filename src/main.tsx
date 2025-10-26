@@ -53,24 +53,24 @@ const router = createBrowserRouter(
       //   ] },
       // ] },
       { path: "projects", children: [
-        { path: "unity", children: [
-          { path: "inventory-system", children: [
-            { path: "about", element: <div/> },
-            { path: "how-to-use", element: <div/> },
-          ]},
-        ] },
-        { path: "dotnet-c#", children: [
-          { path: "travel-agency", children: [
-            { path: "about", element: <div/> },
-            { path: "how-to-use", element: <div/> },
-          ]},
-        ] },
-        { path: "c++", children: [
-          { path: "console-application", children: [
-            { path: "about", element: <div/> },
-            { path: "how-to-use", element: <div/> },
-          ]},
-        ] },
+        // { path: "unity", children: [
+        //   { path: "inventory-system", children: [
+        //     { path: "about", element: <div/> },
+        //     { path: "how-to-use", element: <div/> },
+        //   ]},
+        // ] },
+        // { path: "dotnet-c#", children: [
+        //   { path: "travel-agency", children: [
+        //     { path: "about", element: <div/> },
+        //     { path: "how-to-use", element: <div/> },
+        //   ]},
+        // ] },
+        // { path: "c++", children: [
+        //   { path: "console-application", children: [
+        //     { path: "about", element: <div/> },
+        //     { path: "how-to-use", element: <div/> },
+        //   ]},
+        // ] },
         { path: "python", children: [
           { path: "numerical-algorithms", children: [
             { path: "matrix-operations", element: <MatrixOperations/> },

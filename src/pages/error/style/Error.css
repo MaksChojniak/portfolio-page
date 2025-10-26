@@ -1,4 +1,4 @@
-/* .content{
+.error-content{
     display: flex;
     flex-direction: column;
     justify-content: center;   
@@ -11,14 +11,7 @@
 }
 
 
-
-a{
-    text-decoration: none;    
-}
-
-
-
-.title{
+.error-title{
     color: var(--font0-color);
 
     font-size: 1.3rem;
@@ -27,7 +20,7 @@ a{
 
 
 
-.text{
+.error-text{
     color: var(--font0-color);
 
     font-size: 1.15rem;
@@ -36,7 +29,7 @@ a{
 
 
 
-.button-back{
+.error-button-back{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -58,4 +51,4 @@ a{
 
 
 
- */
+
