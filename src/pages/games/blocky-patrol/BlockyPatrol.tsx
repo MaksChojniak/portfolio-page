@@ -63,7 +63,7 @@ const BlockyPatrol = () => {
         
         <div className='blocky-patrol-section'>
           <div className='blocky-patrol-section-title'>Download & Play</div>
-          <div><a className='blocky-patrol-link' href="https://play.google.com/store/apps/details?id=com.MMK.BlockyPatrol" >Play BlockyPatrol</a></div>  
+          <div><a className='blocky-patrol-link' href="https://play.google.com/store/apps/details?id=com.MMK.BlockyPatrol" >Play Blocky Patrol</a></div>  
         </div>
 
       </div>

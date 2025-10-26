@@ -65,7 +65,7 @@ const IsoRacer = () => {
         
         <div className='iso-racer-section'>
           <div className='iso-racer-section-title'>Download & Play</div>
-          <div><a className='iso-racer-link' href="https://store.steampowered.com/app/2234020/Iso_Racer/" >Play Iso Racer/</a></div>  
+          <div><a className='iso-racer-link' href="https://store.steampowered.com/app/2234020/Iso_Racer/" >Play <b>Iso Racer</b></a></div>  
         </div>
 
       </div>
