@@ -10,11 +10,11 @@ import './style/IsoRacer.css'
 
 const IsoRacer = () => {
 
-  const video1_path = "/assets/iso-racer/video1.webm"
-  const video2_path = "/assets/iso-racer/video2.webm"
+  const video1_path = "/assets/iso-racer/trailer1.webm"
+  const video2_path = "/assets/iso-racer/trailer2.webm"
 
-  const image1_path = "/assets/iso-racer/image1.jpg"
-  const image2_path = "/assets/iso-racer/image2.jpg"
+  const image1_path = "/assets/iso-racer/screenshot1.jpg"
+  const image2_path = "/assets/iso-racer/screenshot2.jpg"
 
   return (
     <>

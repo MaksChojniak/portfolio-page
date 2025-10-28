@@ -10,11 +10,11 @@ import './style/BlockyPatrol.css'
 
 const BlockyPatrol = () => {
 
-  const video1_path = "/assets/blocky-partol/video.webm"
+  const video1_path = "/assets/blocky-partol/trailer.webm"
   
-  const image1_path = "/assets/blocky-partol/blocky1.png"
-  const image2_path = "/assets/blocky-partol/blocky2.png"
-  const image3_path = "/assets/blocky-partol/blocky3.png"
+  const image1_path = "/assets/blocky-partol/screenshot1.png"
+  const image2_path = "/assets/blocky-partol/screenshot2.png"
+  const image3_path = "/assets/blocky-partol/screenshot3.png"
 
   return (
     <>

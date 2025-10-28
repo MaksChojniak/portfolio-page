@@ -1,13 +1,13 @@
 // import PageTitle from './../../components/content/title/Title'
 import PageContent from './../../components/content/content/Content'
 
-// import { SectionRow, SubTitleCell } from './../resume/Table/Table'
+import Image from './../../components/video/Image'
 
 import './style/Home.css'
 
-const ContentLink = ({ link, value, className }: { link: string, value: string, className? : string } ) => {
+const Link = ({ link, className, children }: { link: string, className? : string, children?: React.ReactNode|string } ) => {
   return (
-    <a className={"home-link home-h3 "+className} href={link}>{value}</a>
+    <a className={"home-link home-h3 "+className} href={link}>{children}</a>
   )
 }
 
@@ -51,7 +51,7 @@ const Resume = () => {
     <div className='blocky-patrol-section-title'>Resume</div>
     <div>
       Want to know more about my background? Check out my resume/CV for details on my experience and education.
-      <ContentLink className={"home-list-element"} link={"/resume"} value={"Resume"}/>
+      <Link className={"home-list-element"} link={"/resume"}>Resume</Link>
     </div>
   </div>
   </>
@@ -60,9 +60,20 @@ const Resume = () => {
 
 const Games = () => {
 
+  const iso_racer_logo_path = "/assets/iso-racer/logo.png";
+  const blocy_patrol_logo_path = "/assets/blocky-partol/logo.png";
+
   const featured_games = [
-    <div className='home-table-link-container' ><ContentLink className='home-list-element' value={"ISO Racer"} link="games/iso-racer" /></div>,
-    <div className='home-table-link-container' ><ContentLink className='home-list-element' value={"Blocky Patrol"} link="/games/blocky-patrol" /></div>,
+    <div className='home-table-link-container' >
+      <Link className='home-list-element' link="games/iso-racer">
+        <div className='home-list-image'><Image src={iso_racer_logo_path} /></div>ISO Racer
+      </Link>
+    </div>,
+    <div className='home-table-link-container' >
+      <Link className='home-list-element' link="/games/blocky-patrol">
+        <div className='home-list-image'><Image src={blocy_patrol_logo_path} /></div>Blocky Patrol
+      </Link>
+    </div>,
   ]
 
   return (
@@ -158,7 +169,7 @@ const Contact = () => {
     <div className='blocky-patrol-section-title'>Contact</div>
     <div>
       Interested in games, code, or collaboration? 
-      <ContentLink className={"home-list-element"} link={"/contact"} value={"Contact"}/>
+      <Link className={"home-list-element"} link={"/contact"}>Contact</Link>
     </div>
   </div>
   </>
@@ -172,7 +183,7 @@ const Donate = () => {
     <div className='blocky-patrol-section-title'>Donate</div>
     <div>
       Every contribution brings us one step closer to our goal. Tap the button to donate and make an impact today!
-      <ContentLink className={"home-list-element"} link={"/donate"} value={"Donate"}/>
+      <Link className={"home-list-element"} link={"/donate"}>Donate</Link>
     </div>
   </div>
   </>
