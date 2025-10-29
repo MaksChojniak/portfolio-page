@@ -18,6 +18,17 @@
     border: 1px solid var(--border-color);
 }
 
+.resume-section-title{
+    display: flex;
+
+    align-items: center;
+}
+
+.resume-title-icon{
+    display: flex;
+    margin-right: 0.5rem;
+}
+
 
 .resume-link{
     width: 50%;

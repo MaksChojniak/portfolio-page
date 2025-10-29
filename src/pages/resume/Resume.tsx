@@ -4,9 +4,16 @@ import PageSectionName from './../../components/content/page-section/Section'
 import PageTitle from './../../components/content/title/Title'
 import PageContent from './../../components/content/content/Content'
 
-import { Table, SectionRow, Skills } from './Table/Table'
+import { Table, SectionRow, Skills, TitleCell } from './Table/Table'
 
 import PDF from './../../components/pdf/PDF'
+
+import { IoMdPricetags, IoMdInformationCircle, IoMdStar, IoMdDocument } from "react-icons/io";
+import { IoLanguage } from "react-icons/io5";
+import { FaBook } from "react-icons/fa";
+import { PiOfficeChairFill } from "react-icons/pi";
+import { MdDirectionsBike } from "react-icons/md";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 
 import './style/Resume.css'
 
@@ -15,6 +22,15 @@ const resume_path_pl = "/assets/resume/resume-pl.pdf";
 const resume_name = "maksymilian-chojniak-resume.pdf";
 
 type Language = "pl" | "en"
+
+
+const Title = ( {icon, title} : {icon : React.ReactNode, title : string}) => {
+  return (
+  <>
+  <TitleCell><div className='resume-section-title' ><div className='resume-title-icon'>{icon}</div>{title}</div></TitleCell>
+  </>
+  );
+}
 
 const Resume = () => {
 
@@ -64,7 +80,6 @@ const Resume = () => {
     <div className='certification-container'><a className='certification' href="/assets/certificates/cppbuzz-cpp-certificate.pdf" >C++ (Basic)</a>2025</div>,
     // <div className='certification-container'><a className='certification' href="" >Introduction to Generative AI</a>2025</div>
   ];
-  
 
   return (
     <>
@@ -73,15 +88,15 @@ const Resume = () => {
     <PageContent>
       <div className='resume-table'>
         <Table>
-          <SectionRow title='Name' content='Maksymilian Chojniak' />
-          <SectionRow title='Role' content='Programmer / Game Developer' />
-          <SectionRow title='Description' content='I am a second-year Computer Science student at the Częstochowa University of Technology, actively developing my skills in game and software development. I combine analytical abilities with creativity, and my sports background – including the title of Polish Basketball Champion and numerous individual awards – has taught me teamwork, determination, and consistency in action. I am a fast learner, adapt well to new environments, and approach challenges with enthusiasm.' />
-          <SectionRow title='Experience' contentElements={experience} />
-          <SectionRow title='Education' contentElements={education} />
-          <SectionRow title='Skills' contentElements={skills} />
-          <SectionRow title='Interests' content='Basketball, Cycling, Traveling' />
-          <SectionRow title='Certificates' contentElements={certifcations} />
-          <SectionRow title='Languages' content='Polish (native), English (B2), French (A1)' />
+          <SectionRow titleElement={<Title icon={<IoMdPricetags/>} title='Name' />} content='Maksymilian Chojniak' />
+          <SectionRow titleElement={<Title icon={<PiOfficeChairFill/>} title='Role' />} content='Programmer / Game Developer' />
+          <SectionRow titleElement={<Title icon={<IoMdInformationCircle/>} title='Description' />} content='I am a second-year Computer Science student at the Częstochowa University of Technology, actively developing my skills in game and software development. I combine analytical abilities with creativity, and my sports background – including the title of Polish Basketball Champion and numerous individual awards – has taught me teamwork, determination, and consistency in action. I am a fast learner, adapt well to new environments, and approach challenges with enthusiasm.' />
+          <SectionRow titleElement={<Title icon={<AiOutlineFundProjectionScreen/>} title='Experience' />} contentElements={experience} />
+          <SectionRow titleElement={<Title icon={<FaBook/>} title='Education' />} contentElements={education} />
+          <SectionRow titleElement={<Title icon={<IoMdStar/>} title='Skills' />} contentElements={skills} />
+          <SectionRow titleElement={<Title icon={<MdDirectionsBike/>} title='Interests' />} content='Basketball, Cycling, Traveling' />
+          <SectionRow titleElement={<Title icon={<IoMdDocument/>} title='Certificates' />} contentElements={certifcations} />
+          <SectionRow titleElement={<Title icon={<IoLanguage/>} title='Languages' />} content='Polish (native), English (B2), French (A1)' />
         </Table>
       </div>
       {pdf_file_preview}
