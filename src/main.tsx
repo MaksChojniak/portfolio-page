@@ -10,8 +10,8 @@ import Layout from './components/Layout'
 
 import HomePage from './pages/home/Home'
 
-import Games_BlockyPatrolPage from './pages/games/blocky-patrol/BlockyPatrol'
-import Games_IsoRacerPage from './pages/games/iso-racer/IsoRacer'
+import Games_BlockyPatrolPage from './pages/games/BlockyPatrol'
+import Games_IsoRacerPage from './pages/games/IsoRacer'
 
 // import Console_AboutPage from './pages/tools/console/about/About'
 // import Console_HowToUsePage from './pages/tools/console/how-to-use/HowToUse'

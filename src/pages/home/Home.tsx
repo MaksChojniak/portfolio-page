@@ -1,6 +1,8 @@
 // import PageTitle from './../../components/content/title/Title'
 import PageContent from './../../components/content/content/Content'
 
+import { IoMdInformationCircle , IoMdDocument, IoLogoGameControllerB, IoMdMail , IoMdCash  } from "react-icons/io";
+
 import Image from './../../components/video/Image'
 
 import './style/Home.css'
@@ -16,7 +18,7 @@ const Title = () => {
 
   return (
   <>
-  <div className='blocky-patrol-section'>
+  <div className='home-section'>
     <div className='home-h1' >Hi, I’m Maks Chojniak.</div>
     <div>Developer & indie game creator.</div>
   </div>
@@ -27,8 +29,8 @@ const Title = () => {
 const AboutMe = () => {
   return (
   <>
-  <div className='blocky-patrol-section'>
-    <div className='blocky-patrol-section-title'>About Me</div>
+  <div className='home-section'>
+    <div className='home-section-title home-h2'><div className='home-title-icon'><IoMdInformationCircle/></div>About Me</div>
     <div>
       <div>
         I love combining creativity with programming — from early prototypes to fully playable 
@@ -47,9 +49,9 @@ const AboutMe = () => {
 const Resume = () => {
   return (
   <>
-  <div className='blocky-patrol-section'>
-    <div className='blocky-patrol-section-title'>Resume</div>
-    <div>
+  <div className='home-section'>
+    <div className='home-section-title home-h2'><div className='home-title-icon'><IoMdDocument/></div>Resume</div>
+    <div className='home-table-link-container'>
       Want to know more about my background? Check out my resume/CV for details on my experience and education.
       <Link className={"home-list-element"} link={"/resume"}>Resume</Link>
     </div>
@@ -78,8 +80,8 @@ const Games = () => {
 
   return (
   <>
-  <div className='blocky-patrol-section'>
-    <div className='blocky-patrol-section-title'>Featured Games</div>
+  <div className='home-section'>
+    <div className='home-section-title home-h2'><div className='home-title-icon'><IoLogoGameControllerB/></div>Featured Games</div>
     <div>
       {featured_games.map((child, index) => (
         <div key={index}>{child}</div>
@@ -123,8 +125,8 @@ const Games = () => {
 
 //   return (
 //   <>
-//   <div className='blocky-patrol-section'>
-//     <div className='blocky-patrol-section-title'>Other Projects</div>
+//   <div className='home-section'>
+//     <div className='home-section-title home-h2'>Other Projects</div>
 //     <div>
 //       <div>Unity</div>
 //       <div>
@@ -165,9 +167,9 @@ const Games = () => {
 const Contact = () => {
   return (
   <>
-  <div className='blocky-patrol-section'>
-    <div className='blocky-patrol-section-title'>Contact</div>
-    <div>
+  <div className='home-section'>
+    <div className='home-section-title home-h2'><div className='home-title-icon'><IoMdMail/></div>Contact</div>
+    <div className='home-table-link-container'>
       Interested in games, code, or collaboration? 
       <Link className={"home-list-element"} link={"/contact"}>Contact</Link>
     </div>
@@ -179,9 +181,9 @@ const Contact = () => {
 const Donate = () => {
   return (
   <>
-  <div className='blocky-patrol-section'>
-    <div className='blocky-patrol-section-title'>Donate</div>
-    <div>
+  <div className='home-section'>
+    <div className='home-section-title home-h2'><div className='home-title-icon'><IoMdCash/></div>Donate</div>
+    <div className='home-table-link-container'>
       Every contribution brings us one step closer to our goal. Tap the button to donate and make an impact today!
       <Link className={"home-list-element"} link={"/donate"}>Donate</Link>
     </div>
@@ -196,7 +198,7 @@ const Home = () => {
     <>
     {/* <PageTitle text={"Home"} /> */}
     <PageContent>
-      <div className='blocky-patrol-container'>
+      <div className='home-container'>
 
         <Title/>
         <AboutMe/>

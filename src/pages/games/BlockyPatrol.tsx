@@ -1,12 +1,14 @@
-import PageSectionName from './../../../components/content/page-section/Section'
-import PageTitle from './../../../components/content/title/Title'
-import PageLinkToContent from './../../../components/content/link-to-content-page/Link'
-import PageContent from './../../../components/content/content/Content'
+import PageSectionName from './../../components/content/page-section/Section'
+import PageTitle from './../../components/content/title/Title'
+import PageLinkToContent from './../../components/content/link-to-content-page/Link'
+import PageContent from './../../components/content/content/Content'
 
-import Video from './../../../components/video/Video'
-import Image from './../../../components/video/Image'
+import Video from './../../components/video/Video'
+import Image from './../../components/video/Image'
 
-import './style/BlockyPatrol.css'
+import { IoMdVideocam, IoMdSearch , IoMdImages, IoMdConstruct, IoLogoGameControllerB  } from "react-icons/io";
+
+import './style/style.css'
 
 const BlockyPatrol = () => {
 
@@ -22,21 +24,21 @@ const BlockyPatrol = () => {
     <PageTitle text={"Blocky Patrol"} />
     <PageLinkToContent link={"https://play.google.com/store/apps/details?id=com.MMK.BlockyPatrol"}>https://play.google.com/store/BlockyPatrol</PageLinkToContent>
     <PageContent>
-      <div className='blocky-patrol-container'>
+      <div className='games-container'>
 
         <div>
           <b>Blocky Patrol</b> is a colorful <b>Tower Defense</b> game available on <b>Google Play</b>.<br/> 
           Defend your base against waves of zombies using strategic tower placements — all in a fun low-poly world!
         </div>
 
-        <div className='blocky-patrol-section'>
-          <div className='blocky-patrol-section-title'>Trailer</div>
-          <div className='blocky-patrol-image-container' ><Video src={video1_path} controls={false} /></div>
+        <div className='games-section'>
+          <div className='games-section-title'><div className='games-title-icon'><IoMdVideocam/></div>Trailer</div>
+          <div className='games-image-container' ><Video src={video1_path} controls={false} /></div>
         </div>
 
 
-        <div className='blocky-patrol-section'>
-          <div className='blocky-patrol-section-title'>Overview</div>
+        <div className='games-section'>
+          <div className='games-section-title'><div className='games-title-icon'><IoMdSearch/></div>Overview</div>
           <div>
             Your mission: survive endless waves of enemies, upgrade your towers, and refine your 
             defensive strategy.  With its minimalistic voxel style and smooth 
@@ -46,24 +48,24 @@ const BlockyPatrol = () => {
         </div>
 
 
-        <div className='blocky-patrol-section'>
-          <div className='blocky-patrol-section-title'>Screenshots</div>
-          <div className='blocky-patrol-image-container' ><Image src={image1_path} /></div>
-          <div className='blocky-patrol-image-container' ><Image src={image2_path} /></div>
-          <div className='blocky-patrol-image-container' ><Image src={image3_path} /></div>
+        <div className='games-section'>
+          <div className='games-section-title'><div className='games-title-icon'><IoMdImages/></div>Screenshots</div>
+          <div className='games-image-container' ><Image src={image1_path} /></div>
+          <div className='games-image-container' ><Image src={image2_path} /></div>
+          <div className='games-image-container' ><Image src={image3_path} /></div>
         </div>
 
-        <div className='blocky-patrol-section'>
-          <div className='blocky-patrol-section-title'>Technical Details</div>
-          <div className='blocky-patrol-list-element' >Version: (33) 1.3.3</div>  
-          <div className='blocky-patrol-list-element' >Size: ~176 MB  </div>
-          <div className='blocky-patrol-list-element' >Platform: Android 7.0+</div>  
-          <div className='blocky-patrol-list-element' >Mode: Online </div>
+        <div className='games-section'>
+          <div className='games-section-title'><div className='games-title-icon'><IoMdConstruct/></div>Technical Details</div>
+          <div className='games-list-element' >Version: (33) 1.3.3</div>  
+          <div className='games-list-element' >Size: ~176 MB  </div>
+          <div className='games-list-element' >Platform: Android 7.0+</div>  
+          <div className='games-list-element' >Mode: Online </div>
         </div>
         
-        <div className='blocky-patrol-section'>
-          <div className='blocky-patrol-section-title'>Download & Play</div>
-          <div><a className='blocky-patrol-link' href="https://play.google.com/store/apps/details?id=com.MMK.BlockyPatrol" >Play Blocky Patrol</a></div>  
+        <div className='games-section'>
+          <div className='games-section-title'><div className='games-title-icon'><IoLogoGameControllerB/></div>Download & Play</div>
+          <div><a className='games-link' href="https://play.google.com/store/apps/details?id=com.MMK.BlockyPatrol" >Play Blocky Patrol</a></div>  
         </div>
 
       </div>

@@ -1,14 +1,13 @@
 .home-h1{
-    /* font-size: 1.4rem; */
     font-size: 2rem;
     font-weight: 550;
-
-    /* color: var(--font0-selected-color); */
 }
 
 .home-h2{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 550;
+
+    color: var(--font0-selected-color);
 }
 
 .home-h3{
@@ -16,22 +15,34 @@
     font-weight: 500;
 }
 
-.home-link{
-    color: var(--font0-color);
 
-    text-decoration: underline;
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+
+    gap: 2.5rem;
 }
 
-.home-list-element{
+
+.home-section{
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+}
+
+.home-section-title{
     display: flex;
 
     align-items: center;
-
-    padding: 0.25rem 1rem;
-    border-radius: 5px; 
-
-    gap: 1rem;
 }
+
+.home-title-icon{
+    display: flex;
+    margin-right: 0.5rem;
+}
+
 
 .home-table-link-container{
     display: flex;
@@ -39,31 +50,29 @@
     align-items: center;
 }
 
-dt.home-list-title-element, 
-dd.home-list-element{
-    display: list-item;
-    
-    list-style-type: disc;    
-    list-style-position: inside; 
-}
-dt.home-list-title-element::marker{
-    color: var( --font0-color);
 
-    font-size: 1.3em;
-} 
-dd.home-list-element::marker {
-    color: var( --font0-selected-color);
+.home-list-element{
+    display: flex;
 
-    font-size: 1.3em; 
+    align-items: center;
+
+    margin: 0 0.35rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 5px; 
+
+    gap: 1rem;
 }
 .home-list-element:hover{
     background-color: var(--button-color);
 }
 
 
-.home-section{
-    margin: 2.5rem 0px;
+.home-link{
+    color: var(--font0-color);
+
+    text-decoration: underline;
 }
+
 
 .home-list-image{
     width: 3rem;
@@ -83,5 +92,8 @@ dd.home-list-element::marker {
     .home-h3{
         font-size: 1rem;
     }
-
+    
+    .home-list-image{
+    width: 2.6rem;
+}
 }
