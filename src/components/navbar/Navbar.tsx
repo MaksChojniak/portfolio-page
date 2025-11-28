@@ -64,7 +64,7 @@ const Navbar = ( {isOpen, closeNavbar} : NavbarProps) => {
             </NavbarSection>
             <NavbarSection text=".NET C#" >
               {/* <NavbarSection closeNavbar={closeNavbar} text="Multithreaded Jobs" childs={projects_dotnet_multithreadedjobs_childs} /> */}
-              <NavbarLink closeNavbar={closeNavbar} text="Travel Agency App" link="/projects/dotnet-c#/travel-agency" />
+              <NavbarLink closeNavbar={closeNavbar} text="Travel Agency App" link="/projects/dotnet/travel-agency" />
             </NavbarSection>
             {/* <NavbarSection text="Unreal Engine" >
               <NavbarLink closeNavbar={closeNavbar} text="" link="/projects/unreal-engine/" />
