@@ -11,6 +11,9 @@ interface HeaderProps {
 const Header = ({ isOpen, toggleNavbar }: HeaderProps) => {
 
   const { theme, toggleTheme } = useTheme();
+
+  // var logo_image_path = "";
+  var logo_image_path = `/assets/images/${theme === 'dark' ? "dark" : "light"}/logo_transparent.png`;
   
   return (
     <>
@@ -19,8 +22,8 @@ const Header = ({ isOpen, toggleNavbar }: HeaderProps) => {
             {isOpen ? <FiX/> : <FiMenu/>}
         </button>
         <Link className='logo' to="/" >
-            <img className='logo-image' src="Logo" alt="[]"/>
-            <div className='logo-text'>Logo</div>
+            <img className='logo-image' src={logo_image_path} alt="[]"/>
+            {/* <div className='logo-text'>Portfolio</div> */}
         </Link>
         <button className='theme-toggle' onClick={toggleTheme}>
             {theme === 'dark' ? <FiSun/> : <FiMoon/>}

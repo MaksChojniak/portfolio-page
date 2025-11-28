@@ -60,8 +60,11 @@ const Resume = () => {
 
 
   const education = [
-    <div className='education-container'><span>XCIX Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im.Zbigniewa Herberta</span>2020 - 2024</div>,
+    // <div className='education-container'><span>XCIX Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im.Zbigniewa Herberta</span>2020 - 2024</div>,
     <div className='education-container'><span>Częstochowa University of Technology (Computer Science)</span>2024 - present</div>,
+    // <div className='education-container'><span>Częstochowa University of Technology (Computer Science)</span>2024 - 2026</div>,
+    // <div className='education-container'><span>Częstochowa University of Technology (Artificial Intelligence)</span>2026 - 2026</div>,
+    // <div className='education-container'><span>Sapienza University of Rome (Artificial Intelligence)</span>2026 - present</div>,
   ]
 
   const experience = [

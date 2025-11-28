@@ -13,6 +13,14 @@ const Link = ({ link, className, children }: { link: string, className? : string
   )
 }
 
+const SectionTitle = ( {icon, title} : {icon : React.ReactNode, title : string}) => {
+  return (
+  <>
+  <div className='home-title-icon'>{icon}</div>{title}
+  </>
+  );
+}
+
 
 const Title = () => {
 
@@ -30,7 +38,7 @@ const AboutMe = () => {
   return (
   <>
   <div className='home-section'>
-    <div className='home-section-title home-h2'><div className='home-title-icon'><IoMdInformationCircle/></div>About Me</div>
+    <div className='home-section-title home-h2'><SectionTitle icon={<IoMdInformationCircle/>} title={'About Me'}/></div>
     <div>
       <div>
         I love combining creativity with programming — from early prototypes to fully playable 
@@ -50,7 +58,7 @@ const Resume = () => {
   return (
   <>
   <div className='home-section'>
-    <div className='home-section-title home-h2'><div className='home-title-icon'><IoMdDocument/></div>Resume</div>
+    <div className='home-section-title home-h2'><SectionTitle icon={<IoMdDocument/>} title={'Resume'}/></div>
     <div className='home-table-link-container'>
       Want to know more about my background? Check out my resume/CV for details on my experience and education.
       <Link className={"home-list-element"} link={"/resume"}>Resume</Link>
@@ -81,7 +89,7 @@ const Games = () => {
   return (
   <>
   <div className='home-section'>
-    <div className='home-section-title home-h2'><div className='home-title-icon'><IoLogoGameControllerB/></div>Featured Games</div>
+    <div className='home-section-title home-h2'><SectionTitle icon={<IoLogoGameControllerB/>} title={'Featured Games'}/></div>
     <div>
       {featured_games.map((child, index) => (
         <div key={index}>{child}</div>
@@ -168,7 +176,7 @@ const Contact = () => {
   return (
   <>
   <div className='home-section'>
-    <div className='home-section-title home-h2'><div className='home-title-icon'><IoMdMail/></div>Contact</div>
+    <div className='home-section-title home-h2'><SectionTitle icon={<IoMdMail/>} title={'Contact'}/></div>
     <div className='home-table-link-container'>
       Interested in games, code, or collaboration? 
       <Link className={"home-list-element"} link={"/contact"}>Contact</Link>
@@ -182,7 +190,7 @@ const Donate = () => {
   return (
   <>
   <div className='home-section'>
-    <div className='home-section-title home-h2'><div className='home-title-icon'><IoMdCash/></div>Donate</div>
+    <div className='home-section-title home-h2'><SectionTitle icon={<IoMdCash/>} title={'Donate'}/></div>
     <div className='home-table-link-container'>
       Every contribution brings us one step closer to our goal. Tap the button to donate and make an impact today!
       <Link className={"home-list-element"} link={"/donate"}>Donate</Link>
