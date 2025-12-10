@@ -81,7 +81,7 @@ const Resume = () => {
     <div className='certification-container'><a className='certification' href="https://www.hackerrank.com/certificates/598408e3cf49" >Problem Solving (Basic)</a>2025</div>,
     <div className='certification-container'><a className='certification' href="https://www.hackerrank.com/certificates/28f6f760921a" >Problem Solving (Intermediate)</a>2025</div>,
     <div className='certification-container'><a className='certification' href="/assets/certificates/cppbuzz-cpp-certificate.pdf" >C++ (Basic)</a>2025</div>,
-    // <div className='certification-container'><a className='certification' href="" >Introduction to Generative AI</a>2025</div>
+    <div className='certification-container'><a className='certification' href="/assets/certificates/google_gen_ai_certificate" >Introduction to Generative AI</a>2025</div>
   ];
 
   return (
