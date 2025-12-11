@@ -25,6 +25,8 @@ import ContactPage from './pages/contact/Contact'
 
 import ErrorPage from './pages/error/Error'
 
+import TravelAgencyApp from './pages/projects/.net/travel-agency-app/TravelAgencyApp'
+
 import MatrixOperations from './pages/projects/python/numerical-algorithms/MatrixOperations'
 import IterativeMethods from './pages/projects/python/numerical-algorithms/IterativeMethods'
 import InterpolationMethods from './pages/projects/python/numerical-algorithms/InterpolationMethods'
@@ -59,12 +61,9 @@ const router = createBrowserRouter(
         //     { path: "how-to-use", element: <div/> },
         //   ]},
         // ] },
-        // { path: "dotnet-c#", children: [
-        //   { path: "travel-agency", children: [
-        //     { path: "about", element: <div/> },
-        //     { path: "how-to-use", element: <div/> },
-        //   ]},
-        // ] },
+        { path: "dotnet", children: [
+          { path: "travel-agency", element: <TravelAgencyApp/>},
+        ] },
         // { path: "c++", children: [
         //   { path: "console-application", children: [
         //     { path: "about", element: <div/> },
