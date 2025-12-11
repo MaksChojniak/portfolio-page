@@ -6,7 +6,7 @@ const TravelAgencyApp = () => {
 
     return (
     <>
-        {/* <Diagram filePath='public\assets\projects\dotnet\travel-agency\diagram.txt'/> */}
+        <Diagram filePath='public\assets\projects\dotnet\travel-agency\diagram.txt'/>
     </>
     );
 }
