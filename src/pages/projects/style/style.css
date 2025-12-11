@@ -1,0 +1,14 @@
+
+/* .project-section{
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+} */
+
+.project-image-container{
+    margin: 0 auto;
+
+    width: 60%;
+    aspect-ratio: 1/1;
+}

@@ -1,12 +1,14 @@
-import Diagram from './../../../../components/diagrams/Diagram'
+import Image from './../../../../components/video/Image'
 
-import './style/TravelAgencyApp.css'
+import './../../style/style.css'
 
 const TravelAgencyApp = () => {
 
+    const diagram_path = "/assets/projects/dotnet/travel-agency/diagram.png"
+
     return (
     <>
-        <Diagram filePath='public\assets\projects\dotnet\travel-agency\diagram.txt'/>
+        <div className='project-image-container' ><Image src={diagram_path} /></div>
     </>
     );
 }
