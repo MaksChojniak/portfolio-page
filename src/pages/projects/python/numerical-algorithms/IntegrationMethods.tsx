@@ -3,7 +3,7 @@ import PageTitle from './../../../../components/content/title/Title'
 import PageLinkToContent from './../../../../components/content/link-to-content-page/Link'
 import PageContent from './../../../../components/content/content/Content'
 
-import './style/NumericalAlgorithms.css'
+import './../../style/style.css'
 
 const IntegrationMethods = () => {
   return (

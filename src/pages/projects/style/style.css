@@ -1,14 +1,49 @@
+.project-container{
+    display: flex;
+    flex-direction: column;
 
-/* .project-section{
+    gap: 2.5rem;
+}
+
+
+.project-section{
     display: flex;
     flex-direction: column;
 
     gap: 0.5rem;
-} */
+}
+
+.project-section-title{
+    display: flex;
+
+    align-items: center;
+
+    font-size: 1.4rem;
+    font-weight: 550;
+
+    color: var(--font0-selected-color);
+}
+
+.project-title-icon{
+    display: flex;
+    margin-right: 0.5rem;
+}
+
 
 .project-image-container{
     margin: 0 auto;
 
-    width: 60%;
+    width:  50%;
     aspect-ratio: 1/1;
+}
+
+
+@media (max-width: 768px){
+    .project-image-container{
+        width: 85%;
+    }
+
+    .project-section-title{
+        font-size: 1.2rem;
+    }
 }
