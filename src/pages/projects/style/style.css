@@ -37,6 +37,10 @@
     aspect-ratio: 1/1;
 }
 
+.project-latex{
+    height: 1.4rem;
+    margin: 5px 0px;
+}
 
 @media (max-width: 768px){
     .project-image-container{
@@ -45,5 +49,10 @@
 
     .project-section-title{
         font-size: 1.2rem;
+    }
+
+    .project-latex{
+        height: 1.2rem;
+        margin: 3px 0px;
     }
 }

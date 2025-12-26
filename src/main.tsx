@@ -25,6 +25,8 @@ import ContactPage from './pages/contact/Contact'
 
 import ErrorPage from './pages/error/Error'
 
+import SerializableCollections from './pages/projects/unity/serializable-collections/SerializableCollections'
+
 import TravelAgencyApp from './pages/projects/.net/travel-agency-app/TravelAgencyApp'
 
 import MatrixOperations from './pages/projects/python/numerical-algorithms/MatrixOperations'
@@ -55,12 +57,13 @@ const router = createBrowserRouter(
       //   ] },
       // ] },
       { path: "projects", children: [
-        // { path: "unity", children: [
-        //   { path: "inventory-system", children: [
-        //     { path: "about", element: <div/> },
-        //     { path: "how-to-use", element: <div/> },
-        //   ]},
-        // ] },
+        { path: "unity", children: [
+          { path: "serializable-collections", element: <SerializableCollections/>},
+          // { path: "inventory-system", children: [
+          //   { path: "about", element: <div/> },
+          //   { path: "how-to-use", element: <div/> },
+          // ]},
+        ] },
         { path: "dotnet", children: [
           { path: "travel-agency", element: <TravelAgencyApp/>},
         ] },
