@@ -20,7 +20,7 @@ export { ProgrammingLang };
 
 interface CodeProps{
     code?: string;
-    children: React.ReactNode
+    children?: React.ReactNode
     language: ProgrammingLang
 }
 
