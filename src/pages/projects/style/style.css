@@ -45,6 +45,8 @@
 .project-list-element{
     list-style: disc;
     list-style-position: inside;
+
+    font-size: 1.2rem;
 }
 .project-list-element:hover{
     background-color: transparent;
