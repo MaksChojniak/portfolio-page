@@ -42,6 +42,14 @@
     margin: 5px 0px;
 }
 
+.project-list-element{
+    list-style: disc;
+    list-style-position: inside;
+}
+.project-list-element:hover{
+    background-color: transparent;
+}
+
 @media (max-width: 768px){
     .project-image-container{
         width: 85%;
