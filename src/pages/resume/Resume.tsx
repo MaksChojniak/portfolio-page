@@ -61,9 +61,9 @@ const Resume = () => {
 
   const education = [
     // <div className='education-container'><span>XCIX Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im.Zbigniewa Herberta</span>2020 - 2024</div>,
-    <div className='education-container'><span>Częstochowa University of Technology (Computer Science)</span>2024 - present</div>,
-    // <div className='education-container'><span>Częstochowa University of Technology (Computer Science)</span>2024 - 2026</div>,
-    // <div className='education-container'><span>Częstochowa University of Technology (Artificial Intelligence)</span>2026 - 2026</div>,
+    // <div className='education-container'><span>Częstochowa University of Technology (Computer Science)</span>2024 - present</div>,
+    <div className='education-container'><span>Częstochowa University of Technology (Computer Science)</span>2024 - 2026</div>,
+    <div className='education-container'><span>Częstochowa University of Technology (Artificial Intelligence)</span>2026 - 2026</div>,
     // <div className='education-container'><span>Sapienza University of Rome (Artificial Intelligence)</span>2026 - present</div>,
   ]
 
@@ -72,8 +72,8 @@ const Resume = () => {
     <div className='experience-container'><a className='experience' href="/games/blocky-patrol" >Blocky Patrol</a>2023 - 2025</div>
   ];
 
-  const skills = <Skills skills={[ {name: "C#", level: 4}, {name: "Unity", level: 3}, {name: "Algorithms", level: 3},
-     {name: "C++", level: 3}, {name: "Python", level: 3}, {name: ".NET", level: 3}, {name: "Git", level: 3} ]} max_level={5} />;
+  const skills = <Skills skills={[ {name: "C#", level: 4}, {name: "Unity", level: 3}, {name: "Algorithms", level: 3}, {name: "C++", level: 3}, 
+     {name: "Python", level: 3}, {name: "ML", level: 3}, {name: ".NET", level: 3}, {name: "Git", level: 3} ]} max_level={5} />;
 
   const certifcations = [
     <div className='certification-container'><a className='certification' href="/assets/certificates/gigathon-2etap-certificate.pdf" >Gigathon Stage 2</a>2023</div>,
