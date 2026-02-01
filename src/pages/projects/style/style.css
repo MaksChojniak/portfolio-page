@@ -42,6 +42,30 @@
     margin: 5px 0px;
 }
 
+.project-sublist{
+    list-style: disc;
+    list-style-position: inside;
+
+    padding-left: 0px;
+}
+.project-sublist:hover{
+    background-color: transparent;
+}
+
+.project-sublist-item{
+    /* display: inline-flex;
+     */
+    list-style: decimal;
+    list-style-position: inside;
+}
+.project-sublist-item:hover{
+    background-color: transparent;
+}
+
+.centered-latex{
+    padding-left: 1rem;
+}
+
 .project-list-element{
     list-style: disc;
     list-style-position: inside;

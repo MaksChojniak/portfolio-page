@@ -21,13 +21,22 @@ const SerializableCollections = () => {
         <PageContent>
             <div className='project-container'>
                 <div className='project-section'>
+                    <div className='project-section-title'>About</div>
+                    <div>
+                        <b>Serializable Collections</b> is a library that extends Unity’s serialization system, enabling the use of data collections that are not serialized by Unity by default
+                         (such as dictionaries, sets, or deque). This allows you to store and edit more advanced data structures directly in the Unity Editor without 
+                         the need for additional workarounds.
+                    </div>
+                </div>  
+
+                <section id="installation" className='project-section'>
                     <div className='project-section-title'><div className='project-title-icon'><IoMdDownload /></div>Installation</div>
                     <div>
                         Not released yet
                     </div>
-                </div>                
+                </section>                
               
-                <div className='project-section'>
+                <section id="dictionary" className='project-section'>
                     <div className='project-section-title'>{'Dictionary<Key, Value>'}</div>
                     <div>
                         This custom <b>Dictonary</b> can be created using one of the <b>constructors</b> like in the system collection <b>Dictionary</b>.<br/>
@@ -51,9 +60,9 @@ const SerializableCollections = () => {
                             '   Console.WriteLine(el);  // expected output: [key1, hello] [key2, world]'};
                         </Code>
                     </div>
-                </div>
+                </section>
 
-                <div className='project-section'>
+                <section id="hashset" className='project-section'>
                     <div className='project-section-title'>{'HashSet<Value>'}</div>
                     <div>
                         This custom <b>HashSet</b> can be created using one of the <b>constructors</b> like in the system collection <b>HashSet</b>.<br/>
@@ -78,9 +87,9 @@ const SerializableCollections = () => {
                             '   Console.WriteLine(el);  // expected output: [hello] [world]'};
                         </Code>
                     </div>
-                </div>
+                </section>
 
-                <div className='project-section'>
+                <section id="queue" className='project-section'>
                     <div className='project-section-title'>{'Queue<Value>'}</div>
                     <div>
                         This custom <b>Queue</b> can be created using one of the <b>constructors</b> like in the system collection <b>Queue</b>.<br/>
@@ -104,8 +113,8 @@ const SerializableCollections = () => {
                             '   Console.WriteLine(queue.Dequeue());  // expected output: [hello] [world]'};
                         </Code>
                     </div>
-                </div>
-                <div className='project-section'>
+                </section>
+                <section id="stack" className='project-section'>
                     <div className='project-section-title'>{'Stack<Value>'}</div>
                     <div>
                         This custom <b>Stack</b> can be created using one of the <b>constructors</b> like in the system collection <b>Stack</b>.<br/>
@@ -129,7 +138,7 @@ const SerializableCollections = () => {
                             '   Console.WriteLine(stack.Pop());  // expected output: [world] [hello]'};
                         </Code>
                     </div>
-                </div>
+                </section>
             
             </div>
         </PageContent>

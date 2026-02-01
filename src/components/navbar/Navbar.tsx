@@ -58,7 +58,7 @@ const Navbar = ( {isOpen, closeNavbar} : NavbarProps) => {
             <NavbarSection text="Unity" >
               {/* <NavbarSection closeNavbar={closeNavbar} text="AI ML Agents" childs={projects_unity_aimlagents_childs} /> */}
               <NavbarLink closeNavbar={closeNavbar} text="Serializable Collections" link="/projects/unity/serializable-collections" />
-              <NavbarSection closeNavbar={closeNavbar} text="Multiplayer" childs={projects_unity_multiplayer_childs} />
+              {/* <NavbarSection closeNavbar={closeNavbar} text="Multiplayer" childs={projects_unity_multiplayer_childs} /> */}
               {/* <NavbarSection closeNavbar={closeNavbar} text="City Generator" childs={projects_unity_proceduralcitygenerator_childs} />
               <NavbarLink closeNavbar={closeNavbar} text="Inventory System" link="/projects/unity/inventory-system" />
               <NavbarLink closeNavbar={closeNavbar} text="Console Pro" link="/projects/unity/console-pro" /> */}
