@@ -13,10 +13,10 @@ const Navbar = ( {isOpen, closeNavbar} : NavbarProps) => {
   // const projects_unity_aimlagents_childs = [
   //   {text:"About", link:"/projects/unity/ai-ml-agents/about"}, 
   // ];
-  const projects_unity_multiplayer_childs = [
-    {text:"Host Migration", link:"/projects/unity/host-migration"}, 
-    {text:"Lockstep Sync", link:"/projects/unity/lockstep-sync"}, 
-  ];
+  // const projects_unity_multiplayer_childs = [
+  //   {text:"Host Migration", link:"/projects/unity/host-migration"}, 
+  //   {text:"Lockstep Sync", link:"/projects/unity/lockstep-sync"}, 
+  // ];
   // const projects_unity_proceduralcitygenerator_childs = [
   //   {text:"About", link:"/projects/unity/procedural-cite-generator/about"}, 
   // ];
