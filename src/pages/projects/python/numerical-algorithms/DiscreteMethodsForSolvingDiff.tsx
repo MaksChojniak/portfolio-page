@@ -16,40 +16,39 @@ const DiscreteMethodsForSolvingDiff = () => {
     <PageContent>
       <div className='project-container'>
                 
-        <div className='project-section'>
-          <div className='project-section-title'>Euler Method</div>
+        <section  id='euler' className='project-section'>
+          <div className='games-section-title'>Euler's Method</div>
           <div>
-            Euler's method is the simplest numerical technique for solving ordinary differential equations by stepping forward using the derivative at the current point.
+             Euler's method is a first-order numerical procedure for solving ordinary differential equations (ODEs) with a given initial value. 
+             It works by taking small steps along the direction of the tangent line as defined by the differential equation.
             <li className='project-sublist' ><b>Step-by-Step:</b></li>
             <ol>
-              <li className='project-sublist-item' >Given:
-                <div className='centered-latex'><LaTeX math={"y'=f(t,y),y(t_0)=y_0"}/></div>
-              </li>
-              <li className='project-sublist-item' >Update:
-                <div className='centered-latex'><LaTeX math={"y_{n+1} = y_n + h f(t_n, y_n)"}/></div>
+              <li className='project-sublist-item' >Start with initial values <LaTeX math={"x_0, y_0"}/> and a step size <LaTeX math={"h"}/>.</li>
+              <li className='project-sublist-item' >Iteratively calculate the next <LaTeX math={"y"}/> value:
+                <div className='centered-latex'><LaTeX math={"y_{i+1} = y_i + h \\cdot F(x_i, y_i)"}/></div>
               </li>
             </ol>
           </div>
-        </div>
+        </section>
 
-        <div className='project-section'>
-          <div className='project-section-title'>Runge-Kutta 4 (RK4)</div>
+        <section  id='runge-kutta-3' className='project-section'>
+          <div className='games-section-title'>Runge-Kutta 3rd Order (RK3)</div>
           <div>
-            The fourth-order Runge–Kutta method provides high accuracy for solving ordinary differential equations by combining multiple slope evaluations within each step.
+             This method provides a third-order approximation of an ODE solution by calculating the slope at multiple points within each step. 
+             It offers a much better balance between computational cost and accuracy compared to the simple Euler method.
             <li className='project-sublist' ><b>Step-by-Step:</b></li>
             <ol>
-              <li className='project-sublist-item' >Compute:
-                <div className='centered-latex'><LaTeX math={"k_1 = f(t_n, y_n)"}/></div>
-                <div className='centered-latex'><LaTeX math={"k_2 = f\\left(t_n + \\frac{h}{2}, y_n + \\frac{h}{2} k_1\\right)"}/></div>
-                <div className='centered-latex'><LaTeX math={"k_3 = f\\left(t_n + \\frac{h}{2}, y_n + \\frac{h}{2} k_2\\right)"}/></div>
-                <div className='centered-latex'><LaTeX math={"k_4 = f(t_n + h, y_n + h k_3)"}/></div>
+              <li className='project-sublist-item' >Calculate three intermediate slope estimates <LaTeX math={"(m1, m2, m3)"}/>:
+                <div className='centered-latex'><LaTeX math={"m_1 = F(x_i, y_i)"}/></div>
+                <div className='centered-latex'><LaTeX math={"m_2 = F(x_i + \\frac{h}{2}, y_i + \\frac{h \\cdot m_1}{2})"}/></div>
+                <div className='centered-latex'><LaTeX math={"m_3 = F(x_i + h, y_i - h \\cdot m_1 + 2h \\cdot m_2)"}/></div>
               </li>
-              <li className='project-sublist-item' >Update:
-                <div className='centered-latex'><LaTeX math={"y_{n+1} = y_n + \\frac{h}{6} (k_1 + 2 k_2 + 2 k_3 + k_4)"}/></div>
+              <li className='project-sublist-item' >Update the <LaTeX math={"y"}/> value using the weighted average of these slopes:
+                <div className='centered-latex'><LaTeX math={"y_{i+1} = y_i + \\frac{h}{6}(m_1 + 4m_2 + m_3)"}/></div>
               </li>
             </ol>
           </div>
-        </div>
+        </section>
 
       </div>
     </PageContent>

@@ -16,43 +16,28 @@ const ExactMethods = () => {
     <PageContent>
       <div className='project-container'>
                 
-        <div className='project-section'>
-          <div className='games-section-title'>Gaussian Elimination</div>
+        <section id='thomas' className='project-section'>
+          <div className='games-section-title'>Thomas Algorithm (Tridiagonal Systems)</div>
           <div>
-            Gaussian elimination transforms a system of linear equations into an upper triangular form that can be solved efficiently. 
-            It is a fundamental direct method for solving linear systems.
+             The Thomas algorithm is a highly efficient simplification of Gaussian elimination designed specifically for tridiagonal matrices. 
+             It reduces the computational complexity from <LaTeX math={"O(n^3)"}/> to <LaTeX math={"O(n)"}/> by focusing only on the non-zero diagonals
             <li className='project-sublist' ><b>Step-by-Step:</b></li>
             <ol>
-              <li className='project-sublist-item' >For each pivot row <LaTeX math={"k"}/>:
-                <div className='centered-latex'><LaTeX math={"m_{i k} = \\frac{a_{i k}}{a_{k k}}"}/></div>
+              <li className='project-sublist-item' >Forward Elimination: Compute auxiliary coefficients <LaTeX math={"\\beta"}/> and <LaTeX math={"\\gamma"}/>:
+                <div className='centered-latex'><LaTeX math={"\\beta_1 = -\\frac{c_1}{b_1}"}/></div>
+                <div className='centered-latex'><LaTeX math={"\\gamma_1 = \\frac{d_1}{b_1}"}/></div>
+                <li className='project-sublist-item' >For <LaTeX math={"i = 2"}/> to <LaTeX math={"n"}/>:
+                  <div className='centered-latex'><LaTeX math={"\\beta_i = -\\frac{c_i}{a_i \\beta_{i-1} + b_i}"}/></div>
+                  <div className='centered-latex'><LaTeX math={"\\gamma_i = \\frac{d_i - a_i \\gamma_{i-1}}{a_i \\beta_{i-1} + b_i}"}/></div>
+                </li>
               </li>
-              <li className='project-sublist-item' >Eliminate lower elements:
-                <div className='centered-latex'><LaTeX math={"a_{i*} = a_{i*} - m_{ik} a_{k*}"}/></div>
-              </li>
-              <li className='project-sublist-item' >Perform back substitution:
-                <div className='centered-latex'><LaTeX math={"x_i = \\frac{1}{a_{i i}} \\left( b_i - \\sum_{j=i+1}^{n} a_{i j} x_j \\right)"}/></div>
+              <li className='project-sublist-item' >Back Substitution:
+                <li className='project-sublist-item' >Start with the last unknown: <LaTeX math={"x_n = \\gamma_n"}/>.</li>
+                <li className='project-sublist-item' >For <LaTeX math={"i = n-1"}/> down to <LaTeX math={"1"}/>: <LaTeX math={"x_i = \\beta_i x_{i+1} + \\gamma_i"}/>.</li>
               </li>
             </ol>
           </div>
-        </div>
-
-        <div className='project-section'>
-          <div className='games-section-title'>LU Decomposition</div>
-          <div>
-            LU decomposition factors a matrix into lower and upper triangular matrices, making it easier to solve multiple systems with the same coefficient matrix.
-            <li className='project-sublist' ><b>Step-by-Step:</b></li>
-            <ol>
-              <li className='project-sublist-item' >Decompose:
-                <div className='centered-latex'><LaTeX math={"A=LU"}/></div>
-              </li>
-              <li className='project-sublist-item' >Solve:
-                <div className='centered-latex'><LaTeX math={"Ly=b"}/></div>
-                <div className='centered-latex'><LaTeX math={"Ux=y"}/></div>
-              </li>
-              <li className='project-sublist-item' >Reuse <LaTeX math={"L"}/> and <LaTeX math={"U"}/> for multiple right-hand sides</li>
-            </ol>
-          </div>
-        </div>
+        </section>
 
         </div>
     </PageContent>

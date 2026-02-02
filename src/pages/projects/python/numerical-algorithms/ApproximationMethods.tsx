@@ -16,22 +16,33 @@ const ApproximationMethods = () => {
     <PageContent>
       <div className='project-container'>
                 
-        <div className='project-section'>
-          <div className='games-section-title'>Least Squares Approximation</div>
+        <section  id='linear' className='project-section'>
+          <div className='games-section-title'>Least Squares Approximation (Linear Approximation)</div>
           <div>
-            Least squares approximation finds the function that best fits data in the sense of minimizing the total squared error between predicted and observed values.
+            This method uses the Least Squares criteria to find the best-fitting straight line through a set of points. 
+            It minimizes the sum of the squares of the vertical deviations between the observed data and the fitted line.
             <li className='project-sublist' ><b>Step-by-Step:</b></li>
             <ol>
-              <li className='project-sublist-item' >Build system:
-                <div className='centered-latex'><LaTeX math={"Ax \\approx b"}/></div>
+              <li className='project-sublist-item' >Set up and solve the normal equations system for parameters <LaTeX math={"p_0"}/> and <LaTeX math={"p_1"}/>:
+                <div className='centered-latex'><LaTeX math={"\\begin{bmatrix} n & \\sum x_i \\\\ \\sum x_i & \\sum x_i^2 \\end{bmatrix} \\begin{bmatrix} p_0 \\\\ p_1 \\end{bmatrix} = \\begin{bmatrix} \\sum y_i \\\\ \\sum x_i y_i \\end{bmatrix}"}/></div>
               </li>
-              <li className='project-sublist-item' >Solve normal equations:
-                <div className='centered-latex'><LaTeX math={"A^T A x = A^T b"}/></div>
-              </li>
-              <li className='project-sublist-item' >Compute coefficients of the approximating function</li>
             </ol>
           </div>
-        </div>
+        </section>
+
+        <section id='quadratic' className='project-section'>
+          <div className='games-section-title'>Least Squares Approximation (Quadratic Approximation)</div>
+          <div>
+            Quadratic approximation fits a second-degree polynomial (parabola) to the data points to capture curvature that a linear model cannot. 
+            Like the linear version, it minimizes the total squared error across all data points.
+            <li className='project-sublist' ><b>Step-by-Step:</b></li>
+            <ol>
+              <li className='project-sublist-item' >Set up and solve the <LaTeX math={"3 \\times 3"}/> system of normal equations for parameters <LaTeX math={"p_0, p_1, p_2"}/>:
+                <div className='centered-latex'><LaTeX math={"\\begin{bmatrix} n & \\sum x_i & \\sum x_i^2 \\\\ \\sum x_i & \\sum x_i^2 & \\sum x_i^3 \\\\ \\sum x_i^2 & \\sum x_i^3 & \\sum x_i^4 \\end{bmatrix} \\begin{bmatrix} p_0 \\\\ p_1 \\\\ p_2 \\end{bmatrix} = \\begin{bmatrix} \\sum y_i \\\\ \\sum x_i y_i \\\\ \\sum x_i^2 y_i \\end{bmatrix}"}/></div>
+              </li>
+            </ol>
+          </div>
+        </section>
 
       </div>
     </PageContent>

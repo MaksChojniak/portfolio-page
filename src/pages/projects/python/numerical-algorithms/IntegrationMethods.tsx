@@ -16,35 +16,50 @@ const IntegrationMethods = () => {
     <PageContent>
       <div className='project-container'>
                 
-        <div className='project-section'>
-          <div className='project-section-title'>Trapezoidal Rule</div>
+        <section  id='rectangular-left' className='project-section'>
+          <div className='games-section-title'>Rectangular Method (Left-hand)</div>
           <div>
-            The trapezoidal rule approximates the area under a curve by dividing it into trapezoids. It provides a simple and efficient numerical integration method.
+             This method approximates a definite integral by summing the areas of rectangles whose heights are determined by the function's value at the left endpoint of each sub-interval. 
+             It is the simplest form of numerical integration and serves as a baseline for more complex methods.
             <li className='project-sublist' ><b>Step-by-Step:</b></li>
             <ol>
-              <li className='project-sublist-item' >Divide interval into <LaTeX math={"n"}/> subintervals:
-                <div className='centered-latex'><LaTeX math={"h = \\frac{b - a}{n}"}/></div>
-              </li>
-              <li className='project-sublist-item' >Apply:
-                <div className='centered-latex'><LaTeX math={"\\int_a^b f(x)\\,dx \\approx \\frac{h}{2} \\left[ f(a) + 2 \\sum_{i=1}^{n-1} f(x_i) + f(b) \\right]"}/></div>
+              <li className='project-sublist-item' >Divide the interval <LaTeX math={"[a, b]"}/> into <LaTeX math={"n"}/> sub-intervals with step <LaTeX math={"h = \\frac{b-a}{n}"}/>.</li>
+              <li className='project-sublist-item' >Calculate the approximate area:
+                <div className='centered-latex'><LaTeX math={"I \\approx h \\sum_{i=0}^{n-1} f(x_i)"}/></div>
               </li>
             </ol>
           </div>
-        </div>
+        </section>
 
-        <div className='project-section'>
-          <div className='project-section-title'>Simpson's Rule</div>
+        <section  id='trapezoidal' className='project-section'>
+          <div className='games-section-title'>Trapezoidal Method</div>
           <div>
-            Simpson's rule approximates integrals using quadratic polynomials, giving higher accuracy than the trapezoidal rule for smooth functions.
+             The trapezoidal rule approximates the region under a curve as a series of trapezoids rather than rectangles. 
+             This generally provides a more accurate approximation of the area, especially for functions with significant slopes.
             <li className='project-sublist' ><b>Step-by-Step:</b></li>
             <ol>
-              <li className='project-sublist-item' >Divide interval into even number of subintervals</li>
-              <li className='project-sublist-item' >Apply:
-                <div className='centered-latex'><LaTeX math={"\\int_a^b f(x)\\,dx \\approx \\frac{h}{3} \\left[ f(x_0) + 4 f(x_1) + 2 f(x_2) + \\dots + f(x_n) \\right]"}/></div>
+              <li className='project-sublist-item' >Calculate the step size <LaTeX math={"h = \\frac{b-a}{n}"}/>.</li>
+              <li className='project-sublist-item' >Apply the weighted sum formula:
+                <div className='centered-latex'><LaTeX math={"I \\approx \\frac{h}{2} \\left[ f(x_0) + 2\\sum_{i=1}^{n-1} f(x_i) + f(x_n) \\right]"}/></div>
               </li>
             </ol>
           </div>
-        </div>
+        </section>
+
+        <section  id='simpson' className='project-section'>
+          <div className='games-section-title'>Simpson's Method</div>
+          <div>
+             Simpson's rule uses quadratic polynomials (parabolas) to approximate the function across pairs of intervals. 
+             It is much more accurate than the trapezoidal rule for smooth functions and requires an even number of sub-intervals.
+            <li className='project-sublist' ><b>Step-by-Step:</b></li>
+            <ol>
+              <li className='project-sublist-item' >Ensure <LaTeX math={"n"}/> is an even integer and calculate <LaTeX math={"h = \\frac{b-a}{n}"}/>.</li>
+              <li className='project-sublist-item' >Apply the formula using alternating weights:
+                <div className='centered-latex'><LaTeX math={"I \\approx \\frac{h}{3} \\left[ f(x_0) + 4\\sum_{i \\in \\{odd\\}} f(x_i) + 2\\sum_{i \\in \\{even\\}} f(x_i) + f(x_n) \\right]"}/></div>
+              </li>
+            </ol>
+          </div>
+        </section>
 
       </div>
     </PageContent>
