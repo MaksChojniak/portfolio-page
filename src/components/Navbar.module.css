@@ -1,0 +1,79 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 56px;
+  transition: background 0.25s, border-color 0.25s;
+}
+
+.logo {
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.dot {
+  color: var(--accent);
+}
+
+.links {
+  display: flex;
+}
+
+/* Nav links: use --nav-fg (dark gray in light, medium gray in dark) */
+.link {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--nav-fg);
+  padding: 0 1rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+  transition: color 0.2s;
+  border: none;
+  background: none;
+}
+
+.link:hover {
+  color: var(--text);
+}
+
+.active {
+  color: var(--accent) !important;
+}
+
+/* Theme toggle: ghost style — uses same vars as .btn-ghost */
+.themeBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid var(--btn-border);
+  background: var(--bg3);
+  color: var(--btn-fg);
+  cursor: pointer;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.themeBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--btn-hover-bg);
+}

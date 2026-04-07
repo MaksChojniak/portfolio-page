@@ -1,0 +1,33 @@
+{
+  "name": "React + Vite + TypeScript",
+  "image": "50f9e1318542",
+
+  // Forward Vite's dev server port to your host
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "Vite Dev Server",
+      "onAutoForward": "openBrowser"
+    }
+  },
+
+  // Run npm install after the container is created
+  "postCreateCommand": "npm install",
+
+  // VS Code extensions installed inside the container
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-next"
+      ],
+      "settings": {
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit"
+        }
+      }
+    }
+  },
+
+  // Run as non-root user (built into the node image)
+  "remoteUser": "node"
+}

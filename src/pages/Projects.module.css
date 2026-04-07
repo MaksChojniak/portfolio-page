@@ -1,0 +1,35 @@
+.section { max-width: 860px; margin: 0 auto; padding: 3rem 2rem; }
+.header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 2rem; }
+.title { font-family: var(--sans); font-size: 1.3rem; font-weight: 700; letter-spacing: -0.02em; color: var(--text); }
+.count { font-size: 0.72rem; color: var(--muted); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Project cards are <button> elements — colors via CSS vars only */
+.card {
+  background: var(--bg2);
+  padding: 1.5rem;
+  border: none;
+  border-left: 1px solid var(--border);
+  text-align: left;
+  font-family: var(--mono);
+  transition: background 0.2s;
+}
+.card:first-child { border-left: none; }
+.card:nth-child(n+4) { border-top: 1px solid var(--border); }
+.card:hover { background: var(--btn-hover-bg); }
+
+.lang { font-size: 0.68rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
+
+/* card title reads --card-title: dark in light mode, light in dark mode */
+.name { font-family: var(--sans); font-size: 1.05rem; font-weight: 700; color: var(--card-title); margin-bottom: 0.5rem; letter-spacing: -0.01em; }
+.desc { font-size: 0.78rem; color: var(--muted); line-height: 1.6; margin-bottom: 1rem; }
+.meta { display: flex; gap: 1rem; font-size: 0.72rem; color: var(--muted); }
+.stars { display: flex; align-items: center; gap: 4px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); display: inline-block; flex-shrink: 0; }
