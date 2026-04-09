@@ -7,20 +7,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
-  padding: 0 2rem;
-  height: 56px;
+  gap: clamp(0.5rem, 2vw, 2rem);
+  padding: 0 clamp(0.5rem, 2vw, 2rem);
+  height: clamp(40px, 10vw, 56px);
   transition: background 0.25s, border-color 0.25s;
+  min-width: 0;
 }
 
 .logo {
   font-family: var(--sans);
   font-weight: 800;
-  font-size: 1rem;
+  font-size: clamp(0.75rem, 2vw, 1rem);
   color: var(--text);
   letter-spacing: -0.02em;
   text-decoration: none;
   transition: color 0.25s;
+  flex-shrink: 0;
 }
 
 .dot {
@@ -29,16 +31,19 @@
 
 .links {
   display: flex;
+  gap: 0;
+  min-width: 0;
+  flex-shrink: 1;
 }
 
 /* Nav links: use --nav-fg (dark gray in light, medium gray in dark) */
 .link {
   font-family: var(--mono);
-  font-size: 0.78rem;
+  font-size: clamp(0.6rem, 1.5vw, 0.78rem);
   font-weight: 500;
   color: var(--nav-fg);
-  padding: 0 1rem;
-  height: 56px;
+  padding: 0 clamp(0.4rem, 1vw, 1rem);
+  height: clamp(40px, 10vw, 56px);
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -48,6 +53,8 @@
   border: 1px solid var(--btn-border);
   border-radius: 6px;
   background: none;
+  white-space: nowrap;
+  flex-shrink: 1;
 }
 
 .link:hover {
@@ -61,7 +68,7 @@
 
 /* Theme toggle: ghost style — uses same vars as .btn-ghost */
 .themeBtn {
-  width: 32px;
+  width: clamp(24px, 4vw, 32px);
   aspect-ratio: 1;
   border-radius: 6px;
   border: 1px solid var(--btn-border);
@@ -73,6 +80,8 @@
   align-items: center;
   justify-content: center;
   transition: border-color 0.2s, color 0.2s, background 0.2s;
+  flex-shrink: 0;
+  margin-left: clamp(0.5rem, 2vw, 1rem);
 }
 
 .themeBtn:hover {
