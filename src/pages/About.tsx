@@ -24,7 +24,14 @@ export default function About() {
             {about.education.map((e, i) => (
               <div key={i} className={s.eduItem}>
                 <div className={s.degree}>{e.degree}</div>
-                <div className={s.school}>{e.school}</div>
+                <a
+                  href={e.transcript}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={s.school}
+                >
+                  {e.school}
+                </a>
                 <div className={s.years}>{e.years}{e.note ? ` · ${e.note}` : ''}</div>
               </div>
             ))}
@@ -35,13 +42,19 @@ export default function About() {
           <div className={s.cardTitle}>certifications</div>
           <div className={s.certList}>
             {about.certifications.map(c => (
-              <div key={c.badge} className={s.certItem}>
+              <a
+                key={c.badge}
+                href={c.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={s.certItem}
+              >
                 <div className={s.certBadge}>{c.badge}</div>
                 <div>
                   <div className={s.certName}>{c.name}</div>
                   <div className={s.certIssuer}>{c.issuer}</div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

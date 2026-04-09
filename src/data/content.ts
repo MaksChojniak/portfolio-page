@@ -119,16 +119,44 @@ export const about = {
   stack: ['Python', 'C#', 'C++', 'SQL', 'SciKit', 'Unity', '.NET', 'Firebase', 'Steamworks', 'Google Play', 'Docker', 'NUnit', 'XUnit'],
   focus: ['ML', 'AI agents', 'API design'],
   education: [
-    // { degree: 'M.Sc. Computer Science', school: 'Warsaw University of Technology', years: '2021 - 2023', note: 'ML & AI' },
-    // { degree: 'B.Sc. Applied Computer Science and Artificial Intelligence', school: 'Sapienza University of Rome', years: '2026 - present', note: 'Erasmus+ program' },
-    { degree: 'B.Sc. Artificial Intelligece', school: 'Czestochowa University of Technology', years: '2026 - present', note: 'Transferred from CS' },
-    { degree: 'B.Sc. Computer Science', school: 'Czestochowa University of Technology', years: '2024 - 2026', note: null as string | null },
+    // { 
+    //   degree: 'M.Sc. Computer Science', 
+    //   school: 'Warsaw University of Technology',      years: '2021 - 2023',         note: 'ML & AI', 
+    //   transcript: 'https://...' 
+    // },
+    // { 
+    //   degree: 'B.Sc. Applied Computer Science and Artificial Intelligence', 
+    //   school: 'Sapienza University of Rome',          years: '2026 - present',      note: 'Erasmus+ program', 
+    //   transcript: 'https://...' 
+    // },
+    { 
+      degree: 'B.Sc. Artificial Intelligece',   
+      school: 'Czestochowa University of Technology',   years: '2026 - present',    note: 'Transferred from CS',
+      transcript: '/assets/resume/transcript/transcript-of-records-ai.pdf' 
+    },
+    { 
+      degree: 'B.Sc. Computer Science',         
+      school: 'Czestochowa University of Technology',   years: '2024 - 2026',         note: null as string | null,
+      transcript: '/assets/resume/transcript/transcript-of-records-cs.pdf' 
+    },
   ],
   certifications: [
-    { badge: 'GCP',  name: 'Introduction to Generative AI',     issuer: 'Google · 2025' },
-    { badge: 'HR',  name: 'Problem Solving - Intermediate',     issuer: 'HackerRank · 2025' },
-    { badge: 'CB',  name: 'C++ - Basic',                        issuer: 'CppBuzz · 2025' },
-    { badge: 'HR',  name: 'C# - Basic',                         issuer: 'HackerRank · 2023' },
+    { 
+      badge: 'GCP',   name: 'Introduction to Generative AI',      issuer: 'Google · 2025',
+      link: '/assets/certificates/google_gen_ai_certificate.pdf' 
+    },
+    { 
+      badge: 'HR',    name: 'Problem Solving - Intermediate',     issuer: 'HackerRank · 2025',
+      link: 'https://www.hackerrank.com/certificates/28f6f760921a' 
+    },
+    { 
+      badge: 'CB',    name: 'C++ - Basic',                        issuer: 'CppBuzz · 2025',
+      link: '/assets/certificates/cppbuzz-cpp-certificate.pdf' 
+    },
+    { 
+      badge: 'HR',    name: 'C# - Basic',                         issuer: 'HackerRank · 2023',
+      link: 'https://www.hackerrank.com/certificates/ebd54a7fa872' 
+    },
   ],
   timeline: [
     // { year: '2026', text: 'started Erasmus+ program at Sapienza' },
