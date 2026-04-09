@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
   padding: 0 2rem;
   height: 56px;
   transition: background 0.25s, border-color 0.25s;
@@ -43,13 +44,15 @@
   text-decoration: none;
   letter-spacing: 0.02em;
   text-transform: lowercase;
-  transition: color 0.2s;
-  border: none;
+  transition: color 0.2s, border-color 0.2s;
+  border: 1px solid var(--btn-border);
+  border-radius: 6px;
   background: none;
 }
 
 .link:hover {
   color: var(--text);
+  border-color: var(--accent);
 }
 
 .active {
@@ -59,7 +62,7 @@
 /* Theme toggle: ghost style — uses same vars as .btn-ghost */
 .themeBtn {
   width: 32px;
-  height: 32px;
+  aspect-ratio: 1;
   border-radius: 6px;
   border: 1px solid var(--btn-border);
   background: var(--bg3);
