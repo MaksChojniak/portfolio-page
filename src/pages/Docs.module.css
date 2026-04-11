@@ -6,6 +6,59 @@
   min-height: calc(100vh - 56px);
 }
 
+/* Hamburger menu button */
+.menuBtn {
+  display: none;
+  position: fixed;
+  top: 70px;
+  left: 1rem;
+  z-index: 90;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--btn-border);
+  border-radius: 6px;
+  background: var(--bg);
+  cursor: pointer;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuIcon {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--text);
+  position: relative;
+  transition: background 0.2s;
+}
+
+.menuIcon::before,
+.menuIcon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--text);
+  transition: transform 0.2s;
+}
+
+.menuIcon::before { top: -6px; }
+.menuIcon::after { top: 6px; }
+
+.menuBtnOpen .menuIcon {
+  background: transparent;
+}
+
+.menuBtnOpen .menuIcon::before {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.menuBtnOpen .menuIcon::after {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
 .sidebar {
   border-right: 1px solid var(--border);
   padding: 2rem 0;
@@ -13,17 +66,19 @@
   top: 56px;
   height: calc(100vh - 56px);
   overflow-y: auto;
+  transition: transform 0.3s ease;
 }
 
 .group { margin-bottom: 1.5rem; }
 
 .groupLabel {
   font-size: 0.65rem;
-  color: var(--muted);
+  color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding: 0 1.25rem;
   margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 /* Sidebar items are <button> — must use CSS vars for color */
@@ -78,6 +133,56 @@
   font-size: 0.85rem;
   color: var(--muted);
   line-height: 1.8;
+}
+
+/* Responsive: sidebar hidden on small screens */
+@media (max-width: 640px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .menuBtn {
+    display: flex;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 200px;
+    height: calc(100vh - 56px);
+    background: var(--bg);
+    border-right: 1px solid var(--border);
+    transform: translateX(-100%);
+    z-index: 80;
+  }
+
+  .sidebarOpen {
+    transform: translateX(0);
+  }
+
+  .content {
+    padding: 1.5rem;
+    padding-top: 4rem;
+  }
+
+  .overlay {
+    position: fixed;
+    inset: 0;
+    top: 56px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    z-index: 70;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
+
+.docBody :global(p) {
   margin-bottom: 1rem;
 }
 .docBody :global(pre) {

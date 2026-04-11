@@ -6,11 +6,28 @@ const allDocs = docs.docSections.flatMap(sec => sec.items)
 
 export default function Docs() {
   const [activeId, setActiveId] = useState('intro')
+  const [sidebarOpen, setSidebarOpen] = useState(false)
   const active = allDocs.find(d => d.id === activeId) ?? docs.fallback.items[0]
+
+  const handleItemClick = (id: string) => {
+    setActiveId(id)
+    setSidebarOpen(false)
+  }
 
   return (
     <div className={s.layout}>
-      <aside className={s.sidebar}>
+      {sidebarOpen && (
+        <div className={s.overlay} onClick={() => setSidebarOpen(false)} />
+      )}
+      <button
+        className={`${s.menuBtn} ${sidebarOpen ? s.menuBtnOpen : ''}`}
+        onClick={() => setSidebarOpen(!sidebarOpen)}
+        aria-label="Toggle menu"
+      >
+        <span className={s.menuIcon} />
+      </button>
+
+      <aside className={`${s.sidebar} ${sidebarOpen ? s.sidebarOpen : ''}`}>
         {docs.docSections.map(sec => (
           <div key={sec.group} className={s.group}>
             <div className={s.groupLabel}>{sec.group}</div>
@@ -18,7 +35,7 @@ export default function Docs() {
               <button
                 key={item.id}
                 className={`${s.item} ${activeId === item.id ? s.active : ''}`}
-                onClick={() => setActiveId(item.id)}
+                onClick={() => handleItemClick(item.id)}
               >
                 {item.label}
               </button>
