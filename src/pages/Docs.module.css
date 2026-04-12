@@ -4,13 +4,14 @@
   max-width: 900px;
   margin: 0 auto;
   min-height: calc(100vh - 56px);
+  position: relative;
 }
 
 /* Hamburger menu button */
 .menuBtn {
   display: none;
-  position: fixed;
-  top: 70px;
+  position: absolute;
+  top: 0.5rem; /* higher: closer to navbar */
   left: 1rem;
   z-index: 90;
   width: 36px;
@@ -61,7 +62,7 @@
 
 .sidebar {
   border-right: 1px solid var(--border);
-  padding: 2rem 0;
+  padding: 3.5rem 0; /* push content down below the menu button */
   position: sticky;
   top: 56px;
   height: calc(100vh - 56px);
@@ -143,6 +144,7 @@
 
   .menuBtn {
     display: flex;
+    top: 0.75rem; /* Mobile: slightly higher (closer to navbar) */
   }
 
   .sidebar {
@@ -151,6 +153,7 @@
     left: 0;
     width: 200px;
     height: calc(100vh - 56px);
+    padding-top: 3.5rem; /* ensure fixed sidebar also starts below the menu button */
     background: var(--bg);
     border-right: 1px solid var(--border);
     transform: translateX(-100%);

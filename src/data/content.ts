@@ -28,7 +28,7 @@ export interface DocSection {
 
 
 export const projects: Project[] = [
-  { id: 'llm-router',  lang: 'Python · AI',       name: 'llm-router',  stars: '2.1k', license: 'MIT',        desc: 'Intelligent request routing across LLM providers with latency-aware fallback strategies.' },
+  // { id: 'llm-router',  lang: 'Python · AI',       name: 'llm-router',  stars: '2.1k', license: 'MIT',        desc: 'Intelligent request routing across LLM providers with latency-aware fallback strategies.' },
   // { id: 'promptkit',   lang: 'TypeScript · CLI',   name: 'promptkit',   stars: '840',  license: 'MIT',        desc: 'Composable prompt engineering toolkit with versioning, evaluation, and diff tooling.' },
   // { id: 'vecstore',    lang: 'Rust · Infra',       name: 'vecstore',    stars: '310',  license: 'Apache 2.0', desc: 'Minimal, embeddable vector store with HNSW indexing and zero external deps.' },
   // { id: 'chain-eval',  lang: 'Python · Data',      name: 'chain-eval',  stars: '190',  license: 'MIT',        desc: 'End-to-end evaluation harness for LLM pipeline outputs with statistical aggregation.' },

@@ -19,14 +19,6 @@ export default function Docs() {
       {sidebarOpen && (
         <div className={s.overlay} onClick={() => setSidebarOpen(false)} />
       )}
-      <button
-        className={`${s.menuBtn} ${sidebarOpen ? s.menuBtnOpen : ''}`}
-        onClick={() => setSidebarOpen(!sidebarOpen)}
-        aria-label="Toggle menu"
-      >
-        <span className={s.menuIcon} />
-      </button>
-
       <aside className={`${s.sidebar} ${sidebarOpen ? s.sidebarOpen : ''}`}>
         {docs.docSections.map(sec => (
           <div key={sec.group} className={s.group}>
@@ -45,6 +37,13 @@ export default function Docs() {
       </aside>
 
       <main className={s.content}>
+        <button
+          className={`${s.menuBtn} ${sidebarOpen ? s.menuBtnOpen : ''}`}
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+          aria-label="Toggle menu"
+        >
+          <span className={s.menuIcon} />
+        </button>
         <div className={s.breadcrumb}>
           docs / <span>{active.breadcrumb}</span> / {active.title}
         </div>
