@@ -22,6 +22,12 @@
 }
 .card:hover { background: var(--btn-hover-bg); }
 
+/* Remove default link styling for project cards that are links */
+.card:link, .card:visited, .card:hover, .card:active {
+  color: inherit;
+  text-decoration: none;
+}
+
 .lang { font-size: 0.68rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
 
 /* card title reads --card-title: dark in light mode, light in dark mode */
@@ -29,4 +35,6 @@
 .desc { font-size: 0.78rem; color: var(--muted); line-height: 1.6; margin-bottom: 1rem; }
 .meta { display: flex; gap: 1rem; font-size: 0.72rem; color: var(--muted); }
 .stars { display: flex; align-items: center; gap: 4px; }
+.license { display: flex; align-items: center; gap: 4px; }
+.downloads { display: flex; align-items: center; gap: 4px; }
 .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); display: inline-block; flex-shrink: 0; }

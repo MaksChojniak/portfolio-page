@@ -11,17 +11,30 @@ export default function Projects() {
         <span className={s.count}>{projects.length} repositories</span>
       </div>
       <div className={s.grid}>
-        {projects.map(p => (
-          <button key={p.id} className={s.card} onClick={() => navigate('/docs')}>
-            <div className={s.lang}>{p.lang}</div>
-            <div className={s.name}>{p.name}</div>
-            <div className={s.desc}>{p.desc}</div>
-            <div className={s.meta}>
-              <span className={s.stars}><span className={s.dot} />{p.stars} stars</span>
-              <span>{p.license}</span>
-            </div>
-          </button>
-        ))}
+        {projects.map(p => {
+          const card = (
+            <>
+              <div className={s.lang}>{p.lang}</div>
+              <div className={s.name}>{p.name}</div>
+              <div className={s.desc}>{p.desc}</div>
+              <div className={s.meta}>
+                {p.stars ?<span className={s.stars}><span className={s.dot} />{p.stars} stars</span> : null}
+                {p.license ?<span className={s.license}><span className={s.dot} />{p.license}</span> : null}
+                {p.downloads ? <span className={s.downloads}><span className={s.dot} />{p.downloads}</span> : null}
+              </div>
+            </>
+          )
+
+          return p.url ? (
+            <a key={p.id} className={s.card} href={p.url} target="_blank" rel="noreferrer">
+              {card}
+            </a>
+          ) : (
+            <button key={p.id} className={s.card} onClick={() => navigate('/docs')}>
+              {card}
+            </button>
+          )
+        })}
       </div>
     </div>
   )

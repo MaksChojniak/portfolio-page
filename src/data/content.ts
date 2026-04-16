@@ -3,8 +3,10 @@ export interface Project {
   lang: string
   name: string
   desc: string
-  stars: string
-  license: string
+  stars?: string | null
+  license?: string | null
+  url?: string | null
+  downloads?: string | null
 }
 
 export interface Docs{
@@ -28,7 +30,9 @@ export interface DocSection {
 
 
 export const projects: Project[] = [
-  // { id: 'llm-router',  lang: 'Python · AI',       name: 'llm-router',  stars: '2.1k', license: 'MIT',        desc: 'Intelligent request routing across LLM providers with latency-aware fallback strategies.' },
+  { id: 'blocky-patrol', lang: 'Unity · Android', name: 'Blocky Patrol', downloads: '5k', url: 'https://play.google.com/store/apps/details?id=com.MMK.BlockyPatrol', desc: 'Voxel-style tower defense game on Google Play with wave-based combat, tower upgrades, and a clean low-poly aesthetic.' },
+  { id: 'iso-racer', lang: 'Unity · Windows', name: 'ISO Racer', downloads: '1k', url: 'https://store.steampowered.com/app/2234020/Iso_Racer/', desc: 'Isometric racing game on Steam featuring drift physics, multiplayer, BUSTED mode, and customizable cars and tracks.' },
+  { id: 'llm-router',  lang: 'Python · AI',       name: 'llm-router',  stars: '2.1k', license: 'MIT',        desc: 'Intelligent request routing across LLM providers with latency-aware fallback strategies.' },
   // { id: 'promptkit',   lang: 'TypeScript · CLI',   name: 'promptkit',   stars: '840',  license: 'MIT',        desc: 'Composable prompt engineering toolkit with versioning, evaluation, and diff tooling.' },
   // { id: 'vecstore',    lang: 'Rust · Infra',       name: 'vecstore',    stars: '310',  license: 'Apache 2.0', desc: 'Minimal, embeddable vector store with HNSW indexing and zero external deps.' },
   // { id: 'chain-eval',  lang: 'Python · Data',      name: 'chain-eval',  stars: '190',  license: 'MIT',        desc: 'End-to-end evaluation harness for LLM pipeline outputs with statistical aggregation.' },

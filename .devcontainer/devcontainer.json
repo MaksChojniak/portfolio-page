@@ -1,6 +1,6 @@
 {
   "name": "React + Vite + TypeScript",
-  "image": "50f9e1318542",
+  "image": "sha256:0a891f46422c424be747bc7c38f939b22048fe7daef563f1201a6d7a6741122f",
 
   // Forward Vite's dev server port to your host
   "forwardPorts": [5173],
