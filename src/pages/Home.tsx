@@ -11,7 +11,7 @@ export default function Home() {
       <h1 className={s.h1}>Maksymilan<br /><em>Chojniak</em></h1>
       <p className={s.sub}>
         Building intelligent systems at the intersection of machine learning and developer tooling.
-        Open source contributor. Documenter of the undocumented.
+        Open source contributor.
       </p>
       <div className={s.actions}>
         <button className="btn btn-primary" onClick={() => navigate('/projects')}>view projects</button>
