@@ -19,8 +19,8 @@ export default function Projects() {
               <div className={s.desc}>{p.desc}</div>
               <div className={s.meta}>
                 {p.stars ?<span className={s.stars}><span className={s.dot} />{p.stars} stars</span> : null}
-                {p.license ?<span className={s.license}><span className={s.dot} />{p.license}</span> : null}
-                {p.downloads ? <span className={s.downloads}><span className={s.dot} />{p.downloads}</span> : null}
+                {p.license ?<span className={s.license}><span className={s.dot} />license {p.license}</span> : null}
+                {p.downloads ? <span className={s.downloads}><span className={s.dot} />{p.downloads} downloads</span> : null}
               </div>
             </>
           )
