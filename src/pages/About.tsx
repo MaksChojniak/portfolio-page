@@ -76,10 +76,23 @@ export default function About() {
           <div className={s.cardTitle}>contact</div>
           <div className={s.contactList}>
             {about.contact.map(c => (
-              <div key={c.label} className={s.contactItem}>
-                <span className={s.contactLabel}>{c.label}</span>
-                <span>{c.value}</span>
-              </div>
+              c.link ? (
+                <a
+                  key={c.label}
+                  href={c.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={s.contactItem}
+                >
+                  <span className={s.contactLabel}>{c.label}</span>
+                  <span className={s.contactValue}>{c.value}</span>
+                </a>
+              ) : (
+                <div key={c.label} className={s.contactItem}>
+                  <span className={s.contactLabel}>{c.label}</span>
+                  <span className={s.contactValue}>{c.value}</span>
+                </div>
+              )
             ))}
           </div>
         </div>

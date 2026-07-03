@@ -25,11 +25,58 @@
 .certIssuer { font-size: 0.72rem; color: var(--muted); }
 
 .timeline { display: flex; flex-direction: column; gap: 1rem; }
-.tlItem { display: flex; gap: 1rem; align-items: flex-start; }
+.tlItem { display: flex; gap: 1rem; align-items: flex-start; flex-wrap: nowrap; }
 .tlDot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-top: 5px; flex-shrink: 0; }
-.tlYear { font-size: 0.72rem; color: var(--accent); min-width: 36px; margin-top: 2px; }
-.tlText { font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
+.tlYear { font-size: 0.72rem; color: var(--accent); min-width: 36px; margin-top: 2px; white-space: nowrap; flex-shrink: 0; }
+.tlText { font-size: 0.8rem; color: var(--muted); line-height: 1.5; min-width: 0; }
 
-.contactList { display: flex; flex-direction: column; gap: 0.75rem; }
-.contactItem { display: flex; align-items: center; gap: 0.75rem; font-size: 0.82rem; color: var(--muted); }
-.contactLabel { color: var(--accent); min-width: 60px; font-size: 0.72rem; }
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.82rem;
+}
+
+.contactLabel {
+  color: var(--accent);
+  min-width: 60px;
+  font-size: 0.72rem;
+}
+
+.contactItem,
+.contactItem a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.contactItem:hover {
+  opacity: 0.7;
+}
+
+.contactItem a:link,
+.contactItem a:visited,
+.contactItem a:active {
+  color: inherit;
+}
+
+.contactLabel {
+  color: var(--accent);
+  min-width: 60px;
+  font-size: 0.72rem;
+}
+
+.contactValue {
+  color: inherit;
+}
+

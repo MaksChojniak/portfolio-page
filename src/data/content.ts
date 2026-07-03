@@ -28,16 +28,39 @@ export interface DocSection {
   items: DocItem[]
 }
 
+export interface WorkExperience {
+  id: string
+  company: string
+  position: string
+  period: string
+  location: string
+  description: string
+  technologies: string[]
+}
 
 export const projects: Project[] = [
-  { id: 'blocky-patrol', lang: 'C# · Unity · Android', name: 'Blocky Patrol', downloads: '5k', url: 'https://play.google.com/store/apps/details?id=com.MMK.BlockyPatrol', desc: 'Voxel-style tower defense game on Google Play with wave-based combat, tower upgrades, and a clean low-poly aesthetic.' },
-  { id: 'iso-racer', lang: 'C# · Unity · Steam', name: 'ISO Racer', downloads: '1k', url: 'https://store.steampowered.com/app/2234020/Iso_Racer/', desc: 'Isometric racing game on Steam featuring drift physics, multiplayer, BUSTED mode, and customizable cars and tracks.' },
+  { id: 'blocky-patrol',  lang: 'C# · Unity · Android', name: 'Blocky Patrol', downloads: '5k', url: 'https://play.google.com/store/apps/details?id=com.MMK.BlockyPatrol',  desc: 'Voxel-style tower defense game on Google Play with wave-based combat, tower upgrades, and a clean low-poly aesthetic.' },
+  { id: 'iso-racer',      lang: 'C# · Unity · Steam',   name: 'ISO Racer', downloads: '1k',     url: 'https://store.steampowered.com/app/2234020/Iso_Racer/',               desc: 'Isometric racing game on Steam featuring drift physics, multiplayer, BUSTED mode, and customizable cars and tracks.' },
+  // { id: 'basketball-ai',  lang: 'Python · ML',          name: 'Basketball AI Tracker',          url: '/',                                                                   desc: 'Basketball shots tracker in real-time. Easy to use and highly accurate. Make sound every each successful shot.' },
+  
   // { id: 'llm-router',  lang: 'Python · AI',       name: 'llm-router',  stars: '2.1k', license: 'MIT',        desc: 'Intelligent request routing across LLM providers with latency-aware fallback strategies.' },
   // { id: 'promptkit',   lang: 'TypeScript · CLI',   name: 'promptkit',   stars: '840',  license: 'MIT',        desc: 'Composable prompt engineering toolkit with versioning, evaluation, and diff tooling.' },
   // { id: 'vecstore',    lang: 'Rust · Infra',       name: 'vecstore',    stars: '310',  license: 'Apache 2.0', desc: 'Minimal, embeddable vector store with HNSW indexing and zero external deps.' },
   // { id: 'chain-eval',  lang: 'Python · Data',      name: 'chain-eval',  stars: '190',  license: 'MIT',        desc: 'End-to-end evaluation harness for LLM pipeline outputs with statistical aggregation.' },
   // { id: 'docfetch',    lang: 'Go · Tooling',       name: 'docfetch',    stars: '120',  license: 'MIT',        desc: 'Fast documentation scraper and offline indexer with semantic search support.' },
   // { id: 'tokenwatch',  lang: 'Python · ML',        name: 'tokenwatch',  stars: '88',   license: 'MIT',        desc: 'Real-time token usage monitor and cost estimator for multi-turn LLM applications.' },
+]
+
+export const workExperiences: WorkExperience[] = [
+  // {
+  //   id: 'internship-2026',
+  //   company: 'TRUMPF Huettinger',
+  //   position: 'Software Engineer Intern',
+  //   period: 'Jul 2026 - Sept 2026',
+  //   location: 'Warsaw, Poland',
+  //   description: 'Focused on backend development with Django and MySQL/PostgreSQL, built Vue.js frontend components, and supported production ML/AI integration via FastAPI endpoints.',
+  //   technologies: ['Python', 'MySQL', 'PostgreSQL', 'Docker', 'Vue.js', 'Django', 'FastAPI', 'ML/AI']
+  // },
 ]
 
 export const home = {
@@ -120,7 +143,7 @@ export const docs: Docs = {
 
 export const about = {
   bio: 'AI Software Engineer based in Poland. I build open source tools, applications and games.',
-  stack: ['Python', 'C#', 'C++', 'SQL', 'SciKit', 'Unity', '.NET', 'Firebase', 'Steamworks', 'Google Play', 'Docker', 'NUnit', 'XUnit'],
+  stack: ['Python', 'C#', 'C++', 'SQL', 'SciKit', 'TensorFlow', 'Unity', '.NET', 'Docker', 'NUnit', 'XUnit'],
   focus: ['ML', 'AI agents', 'API design'],
   education: [
     // { 
@@ -130,17 +153,17 @@ export const about = {
     // },
     // { 
     //   degree: 'B.Sc. Applied Computer Science and Artificial Intelligence', 
-    //   school: 'Sapienza University of Rome',          years: '2026 - present',      note: 'Erasmus+ program', 
-    //   transcript: 'https://...' 
+    //   school: 'Sapienza University of Rome',          years: 'Oct 2026 - present',      note: 'Erasmus+ program', 
+    //   // transcript: 'https://...' 
     // },
     { 
       degree: 'B.Sc. Artificial Intelligece',   
-      school: 'Czestochowa University of Technology',   years: '2026 - present',    note: 'Transferred from CS',
+      school: 'Czestochowa University of Technology',   years: 'Feb 2026 - present',    note: 'Transferred from CS',
       transcript: '/assets/resume/transcript/transcript-of-records-ai.pdf' 
     },
     { 
       degree: 'B.Sc. Computer Science',         
-      school: 'Czestochowa University of Technology',   years: '2024 - 2026',         note: null as string | null,
+      school: 'Czestochowa University of Technology',   years: 'Oct 2024 - Feb 2026',         note: null as string | null,
       transcript: '/assets/resume/transcript/transcript-of-records-cs.pdf' 
     },
   ],
@@ -163,14 +186,15 @@ export const about = {
     },
   ],
   timeline: [
-    // { year: '2026', text: 'started Erasmus+ program at Sapienza' },
-    { year: '2026', text: 'changed B.Sc. major to AI' },
-    { year: '2024', text: 'started B.Sc. CS at PCz' },
+    // { year: 'Oct 2026', text: 'started Erasmus+ program at Sapienza' },
+    // { year: 'Jul 2026', text: 'SWE Internship at TRUMPF Huettinger' },
+    { year: 'Feb 2026', text: 'changed B.Sc. major to AI' },
+    { year: 'Oct 2024', text: 'started B.Sc. CS at PCz' },
   ],
   contact: [
-    { label: 'github',   value: '@makschojniak' },
-    { label: 'email',    value: 'maksgamedev@gmail.com' },
-    { label: 'linkedIn',  value: '@maksymilian-chojniak' },
+    { label: 'github',   value: '@makschojniak', link: 'https://github.com/makschojniak' },
+    { label: 'email',    value: 'maksgamedev@gmail.com', link: 'mailto:maksgamedev@gmail.com' },
+    { label: 'linkedIn', value: '@maksymilian-chojniak', link: 'https://www.linkedin.com/in/maksymilian-chojniak-123433217' },
     { label: 'location', value: 'Warsaw, PL' },
   ],
 }

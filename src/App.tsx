@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Docs from './pages/Docs'
 import About from './pages/About'
+import Experience from './pages/Experience'
 import NotFound from './pages/NotFound'
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/docs" element={<Docs />} />
         <Route path="/about" element={<About />} />
+        <Route path="/experience" element={<Experience />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </ThemeProvider>
