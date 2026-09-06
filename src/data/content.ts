@@ -52,22 +52,50 @@ export const projects: Project[] = [
 ]
 
 export const workExperiences: WorkExperience[] = [
-  // {
-  //   id: 'internship-2026',
-  //   company: 'TRUMPF Huettinger',
-  //   position: 'Software Engineer Intern',
-  //   period: 'Jul 2026 - Sept 2026',
-  //   location: 'Warsaw, Poland',
-  //   description: 'Focused on backend development with Django and MySQL/PostgreSQL, built Vue.js frontend components, and supported production ML/AI integration via FastAPI endpoints.',
-  //   technologies: ['Python', 'MySQL', 'PostgreSQL', 'Docker', 'Vue.js', 'Django', 'FastAPI', 'ML/AI']
-  // },
+  {
+    id: 'trumpf',
+    company: 'TRUMPF Huettinger',
+    position: 'Software Engineer Intern',
+    period: 'Jul 2026 - Sept 2026',
+    location: 'Warsaw, Poland',
+    description: 'Focused on backend development with Django and PostgreSQL, built Vue.js frontend components, and supported production ML/AI integration via FastAPI endpoints.',
+    technologies: ['Python', 'MySQL', 'PostgreSQL', 'Docker', 'Vue.js', 'Django', 'FastAPI', 'ML/AI']
+  },
+  {
+    id: 'travel-agency',
+    company: 'Travel Agency',
+    position: 'Backend & Full-Stack Developer',
+    period: '2025',
+    location: 'Remote / Poland',
+    description: 'Developed a .NET-based booking and reservation workflow with REST APIs, integration logic, and database-driven business features for a travel platform.',
+    technologies: ['C#', '.NET', 'ASP.NET Core', 'SQL', 'PostgreSQL', 'REST API']
+  },
+  {
+    id: 'blocky-patrol',
+    company: 'Blocky Patrol',
+    position: 'Independent Game Developer',
+    period: '2023 - 2024',
+    location: 'Warsaw, Poland',
+    description: 'Built and launched a voxel-style tower defense game for Android, covering gameplay systems, economy balancing, progression, UI, and shop upgrades.',
+    technologies: ['C#', 'Unity', 'Android', 'Game Design', 'UI', 'Optimization']
+  },
+  {
+    id: 'iso-racer',
+    company: 'ISO Racer',
+    position: 'Independent Game Developer',
+    period: '2021 - 2023',
+    location: 'Warsaw, Poland',
+    description: 'Created an isometric racing game prototype and production build with drifting mechanics, car tuning, track systems, and polished gameplay feedback.',
+    technologies: ['C#', 'Unity', 'Steam', 'Game Design', 'Physics', 'Gameplay']
+  },
 ]
+
 
 export const home = {
   stats: [
     { num: projects.length,   sup: projects.length > 6 ?'+' : '',   label: 'projects/repos' },
     { num: '14',               sup: '',                             label: 'GitHub stars' },
-    { num: 'AI',              sup: '/ML',                           label: 'primary focus' },
+    { num: 'Backend',              sup: '/ML',                           label: 'primary focus' },
   ]
 }
 
@@ -142,20 +170,20 @@ export const docs: Docs = {
 }
 
 export const about = {
-  bio: 'AI Software Engineer based in Poland. I build open source tools, applications and games.',
-  stack: ['Python', 'C#', 'C++', 'SQL', 'SciKit', 'TensorFlow', 'Unity', '.NET', 'Docker', 'NUnit', 'XUnit'],
-  focus: ['ML', 'AI agents', 'API design'],
+  bio: 'Software Engineer based in Poland. I build open source tools, applications and games. I am focused on backend development, and machine learning.',
+  stack: ['Python', 'C#', 'C++', 'SQL', 'PostgreSQL', 'Django', 'Vue.js', 'SciKit', 'TensorFlow', 'Unity', '.NET', 'Docker', 'NUnit', 'XUnit'],
+  focus: ['Backend', 'REST APIs', 'ML', 'AI agents', 'API design'],
   education: [
     // { 
     //   degree: 'M.Sc. Computer Science', 
     //   school: 'Warsaw University of Technology',      years: '2021 - 2023',         note: 'ML & AI', 
     //   transcript: 'https://...' 
     // },
-    // { 
-    //   degree: 'B.Sc. Applied Computer Science and Artificial Intelligence', 
-    //   school: 'Sapienza University of Rome',          years: 'Oct 2026 - present',      note: 'Erasmus+ program', 
-    //   // transcript: 'https://...' 
-    // },
+    { 
+      degree: 'B.Sc. Applied Computer Science and Artificial Intelligence', 
+      school: 'Sapienza University of Rome',          years: 'Oct 2026 - present',      note: 'Erasmus+ program', 
+      transcript: '/assets/resume/transcript/acceptance-letter.pdf'
+    },
     { 
       degree: 'B.Sc. Artificial Intelligece',   
       school: 'Czestochowa University of Technology',   years: 'Feb 2026 - present',    note: 'Transferred from CS',
@@ -168,6 +196,10 @@ export const about = {
     },
   ],
   certifications: [
+    { 
+      badge: 'GCP',   name: 'Develop AI-Powered Prototypes',      issuer: 'Google · 2026',
+      link: 'https://www.skills.google/public_profiles/812ad5e6-6917-4960-bdef-cfe498b97bc9/badges/23749794' 
+    },
     { 
       badge: 'GCP',   name: 'Introduction to Generative AI',      issuer: 'Google · 2025',
       link: '/assets/certificates/google_gen_ai_certificate.pdf' 
@@ -186,8 +218,8 @@ export const about = {
     },
   ],
   timeline: [
-    // { year: 'Oct 2026', text: 'started Erasmus+ program at Sapienza' },
-    // { year: 'Jul 2026', text: 'SWE Internship at TRUMPF Huettinger' },
+    { year: 'Sept 2026', text: 'started Erasmus+ program at Sapienza' },
+    { year: 'Jul 2026', text: 'SWE Internship at TRUMPF Huettinger' },
     { year: 'Feb 2026', text: 'changed B.Sc. major to AI' },
     { year: 'Oct 2024', text: 'started B.Sc. CS at PCz' },
   ],

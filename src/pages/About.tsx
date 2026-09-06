@@ -5,7 +5,17 @@ export default function About() {
   return (
     <div className={s.section}>
       <h2 className={s.title}>about</h2>
-      <p className={s.bio}>{about.bio}</p>
+      <div className={s.bioRow}>
+        <p className={s.bio}>{about.bio}</p>
+        <a
+          href="/assets/resume/resume-en.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={s.cvButton}
+        >
+          download CV
+        </a>
+      </div>
       <div className={s.grid}>
 
         <div className={s.card}>

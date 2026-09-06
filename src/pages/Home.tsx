@@ -7,7 +7,7 @@ export default function Home() {
   const navigate = useNavigate()
   return (
     <div className={s.hero}>
-      <div className={s.tag}>AI Software Engineer</div>
+      <div className={s.tag}>Software Engineer</div>
       <h1 className={s.h1}>Maksymilan<br /><em>Chojniak</em></h1>
       <p className={s.sub}>
         Building intelligent systems at the intersection of machine learning and developer tooling.
@@ -15,7 +15,8 @@ export default function Home() {
       </p>
       <div className={s.actions}>
         <button className="btn btn-primary" onClick={() => navigate('/projects')}>view projects</button>
-        <button className="btn btn-ghost"   onClick={() => navigate('/docs')}>read docs</button>
+        <button className="btn btn-ghost" onClick={() => navigate('/experience')}>experience</button>
+        <button className="btn btn-ghost" onClick={() => navigate('/about')}>about me</button>
       </div>
       <div className={s.stats}>
         {home.stats.map(({ num, sup, label }) => (
